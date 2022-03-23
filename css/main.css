@@ -87,6 +87,212 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+:root {
+  --color1: #F7EDE2; /* light background */
+  --color2: #152A3E; /* dark backround */
+  --color3: #84A59D; /* headers */
+  --color4: #F28482; /* headers */
+  --color5: #152A3E; /* light background text */
+  --color6: #F7EDE2; /* dark background text */
+  --color7: #F6BD60; /* links */
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: var(--color5);
+  background-color: var(--color1);
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap; 
+	text-align: left;
+}
+
+.content-wrapper{
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 2% ;
+  width: 100%;
+  }
+
+.half-width{
+  width: 100%;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: var(--color7);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Alike", "serif";
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2em;
+  color: var(--color3);
+}
+
+h2 {
+  font-size: 1.5em;
+  color: var(--color4);
+}
+
+h3 {
+  font-size: 1.125em;
+  color: var(--color3);
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.285em;
+}
+ 
+img {
+  width: 100%;
+}
+ 
+figure {
+  margin: 0;
+  }
+ 
+address {
+  font-style: normal;
+  }
+ 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* ------- header and footer styles ------ */
+header,
+footer {
+  background-color: #202322;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+header {
+  border-bottom: 3px solid var(--color3);
+  margin: 0 auto;
+  width: 100%;
+}
+
+header .content-wrapper {
+  background-color: var(--color2);
+  margin: 0 auto;
+  width: 100%;
+}
+
+header h1 {
+  margin: 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+header nav {
+  padding: 15px 0;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+header nav ul li {
+	font-size: 0.875em;
+	line-height: 2em;
+	padding: 0 10px;
+}
+header nav ul li a{
+	text-decoration: none;
+}
+
+/* ------ about ----- */
+.about .img {
+  align-items: center;
+}
+
+/* ------ skills ----- */
+.skills .content-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.skills,
+.tools {
+  width: 100%;
+  height: auto; 
+  align-items: center; 
+}
+
+.skills h3,
+.tools h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.tools h3 {
+  margin-top: 40px;
+}
+
+.skills-items,
+.tools-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.skills article,
+.tools article {
+  width: 210px;
+  background: var(--color4);
+  text-align: center;
+  font-size: 1.125em;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+
+/* ------ projects ----- */
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
