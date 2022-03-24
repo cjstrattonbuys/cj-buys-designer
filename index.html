@@ -24,7 +24,7 @@
   <meta name="theme-color" content="#fafafa">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Alike&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alike&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
 
     <section id="about">
       <div class="content-wrapper">
-        <div class="half-width">
+        <div class="about-words">
           <h2>Hello, I'm CJ Buys, and I'm a front-end developer who makes 
             beautiful, reactive websites in Orlando, FL</h2>
           <p>I fell in love with coding through data management and visualization 
@@ -63,7 +63,7 @@
             websites, I'm usually cooking and baking, playing with my cats, or
             reading a good book...sometimes at the same time!</p>
         </div>
-        <div class="half-width">
+        <div class="about-img">
           <img src="img/profile-pic.png" alt="CJ Buys profile picture" width=50px/>
         </div>
       </div>
@@ -71,7 +71,9 @@
 
     <section id="skills">
       <div class="content-wrapper">
-        <h2>Skills</h2>
+        <div class="skills-header">
+          <h2>Skills</h2>
+        </div>
         <div class="skills">
           <h3>Developer Skills</h3>
           <div class="skills-items">
@@ -117,63 +119,89 @@
 
     <section id="projects">
       <div class="content-wrapper">
-        <div class="projects">
+        <div class="projects-header">
           <h2>Projects</h2>
+        </div>
+        <div class="projects">
           <article>
+            <h3>Rogue Pickings</h3>
             <a href="https://cjstrattonbuys.github.io/rogue-pickings-reactive/">
               <img src="img/rogue-pickings.png" 
               alt="Rogue Pickings page" 
               width=150px> 
             </a>
-            <h3>Rogue Pickings</h3>
             <p>Rogue Pickings is a reactive website with two breakpoints that uses HTML and CSS to generate basic functionality.</p>
             <p><span>Skills:</span> HTML, CSS, Flexbox</p>
             <p><span>Tools:</span> Photoshop, Chrome DevTools, GitHub Pages</p>
-            <p><span class="button">Live Website</span></p>
+            <div class=button>
+              <a class="live-link" href="https://cjstrattonbuys.github.io/rogue-pickings-reactive/" target="_blank">
+                Live Website
+              </a>
+            </div>
           </article>
           <article>
+            <h3>Unplugged Retreat</h3>
             <a href="https://cjstrattonbuys.github.io/unplugged-retreat/">
               <img src="img/unplugged-retreat.png" 
               alt="Unplugged Retreat page" 
               width=150px> 
             </a>
-            <h3>Unplugged Retreat</h3>
             <p>Unplugged Retreat is a reactive website featuring three different pages and two breakpoints to generate a beautiful interface on all devices. This project was generated using HTML and CSS, and was supported by Git/GitHub-based version control.</p>
             <p><span>Skills:</span> HTML, CSS, Flexbox</p>
             <p><span>Tools:</span> Photoshop, Chrome DevTools, GitHub Pages</p>
+            <div class=button>
+              <a class="live-link" href="https://cjstrattonbuys.github.io/unplugged-retreat/" target="_blank">
+                Live Website
+              </a>
+            </div>
           </article>
           <article>
+            <h3>GitHub Repo Gallery</h3>
             <a href="https://cjstrattonbuys.github.io/github-repo-gallery/">
               <img src="img/github-repo-gallery.png" 
               alt="GitHub Repo Gallery page" 
               width=150px> 
             </a>
-            <h3>GitHub Repo Gallery</h3>
             <p>The GitHub Repo Gallery pulls user data from a named GitHub account and displays profile information and lists of repos using JavaScript. Users are able to search through the repos, select a given repo, and view data on that repo, including languages used and a link to the repo on GitHub.</p>
             <p><span>Skills:</span> JavaScript</p>
             <p><span>Tools:</span> Code Sandbox, REST API, GitHub Pages</p>
+            <div class=button>
+              <a class="live-link" href="https://cjstrattonbuys.github.io/github-repo-gallery/" target="_blank">
+                Live Website
+              </a>
+            </div>
           </article>
           <article>
+            <h3>Guess the Word</h3>
             <a href="https://cjstrattonbuys.github.io/guess-the-word/">
               <img src="img/guess-the-word.png" 
               alt="Guess the Word page" 
               width=150px> 
             </a>
-            <h3>Guess the Word</h3>
             <p>Guess the Word is a game that pulls a random word from a list of imported words, displays a placeholder, and allows users to guess letters in the random word, updating the placeholder if they guess a letter correctly. If they guess all the letters in the word before they run out of guesses, they win!</p>
             <p><span>Skills:</span> JavaScript</p>
             <p><span>Tools:</span> Code Sandbox, JSON, GitHub Pages</p>
+            <div class=button>
+              <a class="live-link" href="https://cjstrattonbuys.github.io/guess-the-word/" target="_blank">
+                Live Website
+              </a>
+            </div>
           </article>
           <article>
+            <h3>Super Sticky Notes</h3>
             <a href="https://9s0gpu.csb.app/">
               <img src="img/super-sticky-notes.png" 
               alt="Super Sticky Notes page" 
               width=150px> 
             </a>
-            <h3>Super Sticky Notes</h3>
             <p>The Super Sticky Notes app is a greenfield project that generates empty sticky notes that can be filled in, searched, and deleted by the user. These sticky notes save between user sessions.</p>
             <p><span>Skills:</span> React, JSX, Components</p>
             <p><span>Tools:</span> Code Sandbox, Props, State</p>
+            <div class=button>
+              <a class="live-link" href="https://9s0gpu.csb.app/" target="_blank">
+                Live Website
+              </a>
+            </div>
           </article>
         </div>
       </div>

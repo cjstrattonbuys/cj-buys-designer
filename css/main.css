@@ -91,8 +91,8 @@ textarea {
 :root {
   --color1: #F7EDE2; /* light background */
   --color2: #152A3E; /* dark backround */
-  --color3: #84A59D; /* headers */
-  --color4: #F28482; /* headers */
+  --color3: #9370DB; /* headers */
+  --color4: #c9b8ed; /* headers */
   --color5: #152A3E; /* light background text */
   --color6: #F7EDE2; /* dark background text */
   --color7: #F6BD60; /* links */
@@ -132,6 +132,10 @@ body {
 ul,
 ol {
   list-style-type: none;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap; 
 }
 
 a {
@@ -153,16 +157,16 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  color: var(--color4);
+  color: var(--color3);
 }
 
 h3 {
-  font-size: 1.125em;
+  font-size: 1.25em;
   color: var(--color3);
 }
 
 p {
-  font-size: 0.875em;
+  font-size: 1em;
   line-height: 1.285em;
 }
  
@@ -176,6 +180,7 @@ figure {
  
 address {
   font-style: normal;
+  color: var(--color7);
   }
  
 .content-wrapper {
@@ -186,7 +191,7 @@ address {
 /* ------- header and footer styles ------ */
 header,
 footer {
-  background-color: #202322;
+  background-color: var(--color2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,15 +200,12 @@ footer {
 }
 
 header {
-  border-bottom: 3px solid var(--color3);
-  margin: 0 auto;
+  border-bottom: 3px solid var(--color2);
   width: 100%;
 }
 
 header .content-wrapper {
-  background-color: var(--color2);
   margin: 0 auto;
-  width: 100%;
 }
 
 header h1 {
@@ -215,28 +217,33 @@ header h1 {
 header nav {
   padding: 15px 0;
 }
+
 header nav ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
+
 header nav ul li {
-	font-size: 0.875em;
+	font-size: 1em;
 	line-height: 2em;
 	padding: 0 10px;
 }
-header nav ul li a{
+
+header nav ul li a {
 	text-decoration: none;
 }
 
 /* ------ about ----- */
-.about .img {
+.about-img {
   align-items: center;
+  width: 50%;
+  border: 1px solid var(--color2);
 }
 
-/* ------ skills ----- */
+/* ------ skills and projects ----- */
 .skills .content-wrapper {
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,6 +256,22 @@ header nav ul li a{
   width: 100%;
   height: auto; 
   align-items: center; 
+  border-right: 1px solid var(--color2);
+  border-left: 1px solid var(--color2);
+}
+
+.tools {
+  border-bottom: 1px solid var(--color2);
+  padding-bottom: 20px;
+}
+
+.skills-header,
+.tools-header {
+  background-color: var(--color2);
+  color: var(--color5);
+  width: 100%;
+  text-align: center;
+  padding: 0px;
 }
 
 .skills h3,
@@ -274,6 +297,7 @@ header nav ul li a{
 .tools article {
   width: 210px;
   background: var(--color4);
+  color: var(--color2);
   text-align: center;
   font-size: 1.125em;
   height: 45px;
@@ -283,14 +307,137 @@ header nav ul li a{
   margin: 10px;
 }
 
+/* ------ projects ------ */
+.projects .content-wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
 
-/* ------ projects ----- */
+.projects {
+  width: 100%;
+  height: auto; 
+  align-items: center; 
+}
+
+.projects-header {
+  background-color: var(--color2);
+  color: var(--color5);
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+}
+
+.projects-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.projects article {
+  width: 95%;
+  text-align: center;
+  font-size: 1.125em;
+  margin: 10px;
+  border: 1px solid var(--color4);
+  align-items: center;
+}
+
+.projects article h3 {
+  background-color: var(--color4);
+  color: var(--color2);
+  margin-top: 0px;
+}
+
+.projects article img {
+  width: 90%;
+  border: 1px solid var(--color2);
+}
+
+.projects article p {
+  text-align: left;
+  padding: 5px;
+}
+
+.projects article p span {
+  font-weight: 700;
+}
+
+.projects article .button {
+  margin: 40px 0;
+}
+
+.projects article .live-link {
+  background-color: var(--color2);
+  padding: 0.75rem 3.75rem;
+  border-radius: 25px;
+}
+
+.projects article a {
+  color: var(--color4);
+}
 
 
+/* ------ footer ------ */
+footer {
+  border-top: 3px solid var(--color3);
+  margin: 0;
+  width: 100%;
+}
+
+footer .content-wrapper {
+  margin: 0px;
+}
+
+footer .contact,
+footer .social {
+  margin: 30px;
+}
+
+footer .social p {
+  margin: 0px;
+  margin-bottom: 5px;
+}
 
 
+/*
+footer .content-wrapper {
+  width: 100%;
+  margin: 10px 0;
+}
 
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
 
+footer .contact,
+footer .social {
+  margin-bottom: 0;
+  width: 50%;
+}
+
+footer h3 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+footer p {
+  line-height: 1.285;
+}
+*/
+
+footer .copyright {
+  width: 100%;
+  color: var(--color3);
+}
 
 
 /* ==========================================================================
