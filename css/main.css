@@ -115,10 +115,6 @@ body {
 }
 
 .content-wrapper{
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 2% ;
@@ -192,10 +188,6 @@ address {
 header,
 footer {
   background-color: var(--color2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   text-align: center;
 }
 
@@ -235,9 +227,16 @@ header nav ul li a {
 }
 
 /* ------ about ----- */
+.about  {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-img {
   align-items: center;
-  width: 50%;
+  width: 35%;
   border: 1px solid var(--color2);
 }
 
@@ -251,22 +250,19 @@ header nav ul li a {
   width: 100%;
 }
 
-.skills,
-.tools {
+.skills-sec,
+.tools-sec {
   width: 100%;
+  margin: 0;
   height: auto; 
-  align-items: center; 
-  border-right: 1px solid var(--color2);
-  border-left: 1px solid var(--color2);
+  align-items: center;
 }
 
-.tools {
-  border-bottom: 1px solid var(--color2);
+.tools-sec {
   padding-bottom: 20px;
 }
 
-.skills-header,
-.tools-header {
+.skills-header {
   background-color: var(--color2);
   color: var(--color5);
   width: 100%;
@@ -274,14 +270,16 @@ header nav ul li a {
   padding: 0px;
 }
 
-.skills h3,
-.tools h3 {
-  margin-bottom: 10px;
+.skills-sec h3,
+.tools-sec h3 {
+  padding-bottom: 10px;
   text-align: center;
+  color: var(--color3);
+  margin: 0;
 }
 
-.tools h3 {
-  margin-top: 40px;
+.tools-sec h3 {
+  padding-top: 40px;
 }
 
 .skills-items,
@@ -293,8 +291,8 @@ header nav ul li a {
   width: 100%;
 }
 
-.skills article,
-.tools article {
+.skills-sec article,
+.tools-sec article {
   width: 210px;
   background: var(--color4);
   color: var(--color2);
@@ -361,7 +359,7 @@ header nav ul li a {
 
 .projects article p {
   text-align: left;
-  padding: 5px;
+  padding: 7px;
 }
 
 .projects article p span {
@@ -385,59 +383,30 @@ header nav ul li a {
 
 /* ------ footer ------ */
 footer {
-  border-top: 3px solid var(--color3);
-  margin: 0;
-  width: 100%;
-}
-
-footer .content-wrapper {
-  margin: 0px;
-}
-
-footer .contact,
-footer .social {
-  margin: 30px;
-}
-
-footer .social p {
-  margin: 0px;
-  margin-bottom: 5px;
-}
-
-
-/*
-footer .content-wrapper {
-  width: 100%;
-  margin: 10px 0;
-}
-
-footer .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-flow: row wrap;
+  flex-direction: column;
+  border-top: 3px solid var(--color3);
+  width: 100%;
 }
 
-footer .contact,
-footer .social {
-  margin-bottom: 0;
-  width: 50%;
+footer .content-wrapper {
+  margin: 50px 0;
+  text-align: center;
 }
 
-footer h3 {
-  font-size: 1.5em;
-  margin-bottom: 40px;
+footer .contact {
+  margin-bottom: 50px;
 }
-
-footer p {
-  line-height: 1.285;
-}
-*/
 
 footer .copyright {
-  width: 100%;
   color: var(--color3);
 }
+
+
+
 
 
 /* ==========================================================================
@@ -528,8 +497,57 @@ footer .copyright {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media all and (min-width:768px) {
+  /* ----- general styles ----- */
+  .content-wrapper {
+    max-width: 700px;
+    margin: 30px 0;
+  }
+
+  footer .content-wrapper {
+    margin: 50px 0;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+
+
+  /* ----- header ----- */
+  
+
+  
+}
+
+@media all and (min-width:1200px) {
+  .content-wrapper {
+    max-width: 1100px;
+    margin: 30px 0;
+  }
+
+  header {
+    justify-content: space-around;
+  }
+
+  header .content-wrapper {
+    width: 90%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  header .header-name {
+    width: 60%;
+  }
+
+  header .header-nav {
+    width: 35%;
+  }
 }
 
 @media print,
