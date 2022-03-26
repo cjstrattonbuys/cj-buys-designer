@@ -370,7 +370,7 @@ figure {
 }
 
 .projects-sec article .button {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .projects-sec article .live-link {
@@ -409,7 +409,11 @@ footer .contact {
   margin-bottom: 50px;
 }
 
-footer .copyright {
+footer .contact p {
+  color: var(--color7);
+}
+
+footer .copyright p {
   color: var(--color3);
 }
 
