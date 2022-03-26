@@ -161,9 +161,12 @@ h3 {
   color: var(--color3);
 }
 
+h4, 
 p {
   font-size: 1em;
   line-height: 1.285em;
+  color: var(--color5);
+  font-weight: normal;
 }
  
 img {
@@ -264,7 +267,6 @@ figure {
 
 .skills-header {
   background-color: var(--color2);
-  color: var(--color5);
   width: 100%;
   text-align: center;
   padding: 0px;
@@ -326,7 +328,6 @@ figure {
 
 .projects-header {
   background-color: var(--color2);
-  color: var(--color5);
   width: 100%;
   text-align: center;
   padding: 0px;
