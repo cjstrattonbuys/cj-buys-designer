@@ -531,12 +531,15 @@ footer .copyright {
     width: 100%;
   }
 
-  .projects-sec article {
+  .projects-sec {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    flex-basis: 50%;
+    flex-flow: row wrap;
+    
+  }
+
+  .projects-sec article {
+    width: 45%;
   }
 
   .projects-sec article h3 {
@@ -544,7 +547,6 @@ footer .copyright {
   }
 
   .projects-sec article p {
-    text-align: left;
     margin: 0px;
   }
 
@@ -596,6 +598,10 @@ footer .copyright {
 
   #profile-img {
     width: 75%;
+  }
+
+  .projects-sec article {
+    width: 30%;
   }
 }
 
