@@ -91,8 +91,8 @@ textarea {
 :root {
   --color1: #F7EDE2; /* light background */
   --color2: #152A3E; /* dark backround */
-  --color3: #9370DB; /* headers */
-  --color4: #c9b8ed; /* headers */
+  --color3: #bea9e9; /* headers */
+  --color4: #bea9e9; /* headers */
   --color5: #152A3E; /* light background text */
   --color6: #F7EDE2; /* dark background text */
   --color7: #F6BD60; /* links */
@@ -232,6 +232,11 @@ header nav ul li a {
   align-items: center;
 }
 
+.about-words h2 {
+  color: var(--color2);
+  background-color: var(--color3);
+}
+
 figure {
   display: flex;
   align-items: center;
@@ -276,7 +281,7 @@ figure {
 .tools-sec h3 {
   padding-bottom: 10px;
   text-align: center;
-  color: var(--color3);
+  color: var(--color2);
   margin: 0;
 }
 
