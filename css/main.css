@@ -567,7 +567,7 @@ footer .copyright p {
   footer .footer-content {
     display: flex;
     justify-content: space-around;
-    align-items: top;
+    align-items: start;
     flex-direction: row;
   }
 
