@@ -89,13 +89,11 @@ textarea {
 
 /* General Styles */
 :root {
-  --color1: #F7EDE2; /* light background */
-  --color2: #152A3E; /* dark backround */
-  --color3: #9370db; /* headers */
-  --color4: #bea9e9; /* headers */
-  --color5: #152A3E; /* light background text */
-  --color6: #F7EDE2; /* dark background text */
-  --color7: #F6BD60; /* links */
+  --color1: #F7EDE2; /* light */
+  --color2: #152A3E; /* dark */
+  --color3: #9370db; /* headers - dark */
+  --color4: #bea9e9; /* headers - light */
+  --color5: #F6BD60; /* links */
 }
 
 html {
@@ -105,7 +103,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  color: var(--color5);
+  color: var(--color2);
   background-color: var(--color1);
   display: flex;
 	justify-content: center;
@@ -135,7 +133,7 @@ ol {
 }
 
 a {
-  color: var(--color7);
+  color: var(--color5);
   text-decoration: none;
 }
 
@@ -165,7 +163,7 @@ h4,
 p {
   font-size: 1em;
   line-height: 1.285em;
-  color: var(--color5);
+  color: var(--color2);
   font-weight: normal;
 }
  
@@ -179,7 +177,7 @@ figure {
  
 address {
   font-style: normal;
-  color: var(--color7);
+  color: var(--color5);
   }
  
 /* ------- header and footer styles ------ */
@@ -388,7 +386,7 @@ figure {
 }
 
 .projects-sec .live-link:hover {
-  background-color: var(--color7);
+  background-color: var(--color5);
   color: var(--color2);
 }
 
@@ -418,7 +416,7 @@ footer .contact {
 }
 
 footer .contact p {
-  color: var(--color7);
+  color: var(--color5);
 }
 
 footer .copyright p {
