@@ -376,6 +376,10 @@ figure {
 
 .projects-sec article .button {
   margin: 50px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
 }
 
 .projects-sec article .live-link {
