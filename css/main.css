@@ -204,6 +204,7 @@ header {
   border-bottom: 3px solid var(--color1);
   width: 100%;
   margin: 0;
+  padding-right: 20px;
 }
 
 header .content-wrapper {
@@ -300,6 +301,12 @@ a.button {
 
 
 
+/* ------ main ----- */
+main .content-wrapper {
+  padding: 100px 0px;
+}
+
+
 /* ------ hero ----- */
 .hero {
   position: relative;
@@ -317,8 +324,28 @@ a.button {
 
 
 /* ------ intro ----- */
+.introduction {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .intro {
-  padding-top: 100px;
+  margin: 0 3.5%;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px red solid;
+
+}
+
+#cj-profile {
+  width: 60%;
+  border: 1px blue solid;
 }
 
 
@@ -621,105 +648,14 @@ footer .copyright p {
 
 @media all and (min-width:768px) {
   /* ----- general styles ----- */
-  .content-wrapper {
-    max-width: 700px;
-    margin: 30px 0;
-    width: 100%;
-  }
-
-  #about .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  #about .about-words {
-    width: 60%;
-  }
-
-  figure {
-    width: 35%;
-  }
-
-  #profile-img {
-    width: 100%;
-  }
-
-  .projects-sec {
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-  }
-
-  .projects-sec article {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .projects-sec article h3 {
-    width: 100%;
-  }
-
-  .projects-sec article p {
-    margin: 0px;
-  }
-
-  footer .content-wrapper {
-    margin: 50px 0;
-  }
-
-  footer .footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    flex-direction: row;
-  }
-
-  footer .contact {
-    margin-bottom: 0;
-  }
+  
 }
 
 
 
 
 @media all and (min-width:1200px) {
-  .content-wrapper {
-    max-width: 1100px;
-    margin: 30px 0;
-    width: 100%
-  }
-
-  header {
-    justify-content: space-around;
-  }
-
-  header .content-wrapper {
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-  }
-
-  header .header-name {
-    width: 60%;
-  }
-
-  header .header-nav {
-    width: 35%;
-  }
-
-  #profile-img {
-    width: 75%;
-  }
-
-  .projects-sec article {
-    width: 30%;
-  }
+  
 }
 
 @media print,
