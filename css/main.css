@@ -113,9 +113,13 @@ body {
 
 .content-wrapper{
   margin: 0 auto;
-  padding: 0 2% ;
   width: 100%;
   }
+
+.introduction-text,
+.case-study-text {
+  margin: 0 3.5%;
+}
 
 a {
   text-decoration: none;
@@ -208,7 +212,7 @@ header {
 }
 
 header .content-wrapper {
-  margin: 0 auto;
+  margin: 0 3.5%;
   display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -303,7 +307,7 @@ a.button {
 
 /* ------ main ----- */
 main .content-wrapper {
-  padding: 100px 0px;
+  padding-top: 100px;
 }
 
 
@@ -331,25 +335,48 @@ main .content-wrapper {
   align-items: center;
 }
 
-.intro {
-  margin: 0 3.5%;
-}
-
 .image {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 1px red solid;
-
 }
 
 #cj-profile {
   width: 60%;
-  border: 1px blue solid;
 }
 
 
-/* ------ about ----- */
+/* ------ work ----- */
+h1 {
+  margin: 0 3.5%;
+  padding: 0px;
+}
+
+.case-studies {
+  margin: 0;
+}
+
+.case-study {
+  margin-bottom: 75px;
+}
+
+.case-study h3,
+.case-study p.type {
+  margin: 0px;
+}
+
+.case-study-text {
+  margin: 0 3.5%;
+}
+
+#dorothy {
+  margin-bottom: 0;
+}
+
+
+
+
+
 .about  {
   display: flex;
   flex-flow: row wrap;
@@ -437,93 +464,6 @@ figure {
   margin: 10px;
 }
 
-/* ------ projects ------ */
-.projects .content-wrapper {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 100%;
-}
-
-.projects {
-  width: 100%;
-  height: auto; 
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  flex-flow: row wrap;
-}
-
-.projects-header {
-  background-color: var(--color2);
-  width: 100%;
-  text-align: center;
-  padding: 0px;
-  margin-top: 100px;
-}
-
-.projects .projects-sec {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.projects-sec article {
-  text-align: center;
-  font-size: 1.125em;
-  margin: 25px 10px;
-  border: 1px solid var(--color4);
-  align-items: center;
-}
-
-.projects-sec article h3 {
-  background-color: var(--color4);
-  color: var(--color2);
-  margin-top: 0px;
-}
-
-.projects-sec article img {
-  width: 90%;
-  border: 1px solid var(--color2);
-  margin-bottom: 20px;
-}
-
-.projects-sec article p {
-  text-align: left;
-  padding: 7px;
-}
-
-.projects-sec article p span {
-  text-align: left;
-  font-weight: 700;
-}
-
-.projects-sec article .button {
-  margin: 50px 0 50px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-}
-
-.projects-sec article .live-link {
-  background-color: var(--color2);
-  padding: 0.75rem 3.75rem;
-  border-radius: 25px;
-  margin-top: 50px;
-}
-
-.projects-sec .live-link:hover {
-  background-color: var(--color5);
-  color: var(--color2);
-}
-
-.projects-sec article a {
-  color: var(--color4);
-}
 
 
 /* ------ footer ------ */
