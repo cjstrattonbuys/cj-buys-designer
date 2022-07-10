@@ -114,12 +114,8 @@ body {
 .content-wrapper{
   margin: 0 auto;
   width: 100%;
+  border: 1px blue solid;
   }
-
-.introduction-text,
-.case-study-text {
-  margin: 0 3.5%;
-}
 
 a {
   text-decoration: none;
@@ -133,8 +129,9 @@ h2 {
 
 h1 {
   font-size: 2.25em;
-  line-height: 2.8125em;
   color: var(--color2);
+  padding: 0px;
+  margin: 0;
 }
 
 h2 {
@@ -152,8 +149,12 @@ h3 {
 h4 {
   font-size: 1.125em;
   line-height: 1.375em;
-  color: var(--color2);
+  color: var(--color5);
   font-weight: bold;
+}
+h4.link {
+  color: var(--color2);
+  margin: 0;
 }
 
 h5 {
@@ -187,20 +188,17 @@ p.label {
   line-height: 1em;
 }
 
- 
 img {
   width: 100%;
 }
- 
-figure {
-  margin: 0;
-  }
- 
+
 address {
   font-style: normal;
   color: var(--color5);
   }
  
+
+
 /* ------- header styles ------ */
 header {
   background-color: var(--color4);
@@ -245,11 +243,11 @@ header .buttons {
 }
 
 a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    color: var(--color3);
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: var(--color3);
 }
 
 .button:hover {
@@ -306,8 +304,19 @@ a.button {
 
 
 /* ------ main ----- */
-main .content-wrapper {
-  padding-top: 100px;
+.introduction, 
+.projects, 
+.about,
+.skills,
+.work {
+  padding: 100px 0;
+}
+
+.introduction .content-wrapper,
+.about .content-wrapper,
+.skills .content-wrapper,
+.work .content-wrapper {
+  margin: 5px 3.5%;
 }
 
 
@@ -333,6 +342,11 @@ main .content-wrapper {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  border: 1px red solid;
+}
+
+.introduction h5 {
+  margin: 25px 0 0 0;
 }
 
 .image {
@@ -347,17 +361,22 @@ main .content-wrapper {
 
 
 /* ------ projects ----- */
-h1 {
+.projects {
+  background-color: var(--color4);
+  border: 1px red solid;
+}
+
+.projects h1 {
   margin: 0 3.5%;
   padding: 0px;
 }
 
 .case-studies {
-  margin: 0;
+  margin-top: 15px;
 }
 
 .case-study {
-  margin-bottom: 75px;
+  margin: 0 0 75px 0;
 }
 
 .case-study h3,
@@ -375,8 +394,12 @@ h1 {
 
 
 /* ------ about ----- */
-.about-section {
-  margin: 0 3.5%;
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px red solid;
 }
 
 .people, .cats {
@@ -408,82 +431,64 @@ h1 {
 }
 
 /* ------ skills ----- */
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color4);
+  border: 1px red solid;
+}
+
+.skills-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  width: 60%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.fontawesome-icon {
+  color: var(--color1);
+  font-size: 50px;
+  align-items: center;
+  margin: 0;
+}
+
+.skill h4 {
+  margin: 5px 0;
+}
+
+.skill p {
+  margin: 0;
+  text-align: center;
+}
 
 
 /* ------ work ----- */
-
-
-/* ------ contact ----- */
-
-
-
-
-
-/* ------ skills and projects ----- */
-.skills .content-wrapper {
-  margin: 0;
+.work {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
-  width: 100%;
-}
-
-.skills-sec,
-.tools-sec {
-  width: 100%;
-  margin: 0;
-  height: auto; 
-  align-items: center;
-}
-
-.tools-sec {
-  padding-bottom: 20px;
-}
-
-.skills-header {
-  background-color: var(--color2);
-  width: 100%;
-  text-align: center;
-  padding: 0px;
-  margin-top: 100px;
-}
-
-.skills-sec h3,
-.tools-sec h3 {
-  padding-bottom: 10px;
-  text-align: center;
-  color: var(--color2);
-  margin: 0;
-}
-
-.tools-sec h3 {
-  padding-top: 40px;
-}
-
-.skills-items,
-.tools-items {
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  width: 100%;
+  border: 1px red solid;
 }
 
-.skills-sec article,
-.tools-sec article {
-  width: 210px;
-  background: var(--color4);
-  color: var(--color2);
-  text-align: center;
-  font-size: 1.125em;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
+.work-text h4.title {
+  margin: 40px 0 0 0;
 }
 
+.resume {
+  margin: 25px 0 0 0;
+}
 
 
 /* ------ footer ------ */
@@ -493,13 +498,14 @@ footer {
   align-items: center;
   flex-flow: row wrap;
   flex-direction: column;
-  border-top: 3px solid var(--color4);
+  background-color: var(--color4);
+  padding: 0 3.5%;
   width: 100%;
 }
 
 footer .content-wrapper {
-  margin: 50px 0;
-  text-align: center;
+  margin: 100px 0;
+  text-align: left;
 }
 
 footer .contact {
