@@ -94,6 +94,8 @@ textarea {
   --color3: #F3F6F4; /* white-green */
   --color4: #DCE5DD; /* green-white */
   --color5: #000000; /* black */
+  --color6: #452F75; /* dark purple */
+  --color7: #2B3B2F; /* dark green */
 }
 
 html {
@@ -114,7 +116,6 @@ body {
 .content-wrapper{
   margin: 0 auto;
   width: 100%;
-  border: 1px blue solid;
   }
 
 a {
@@ -178,6 +179,7 @@ p.button{
 }
 p.type {
   font-weight: bold;
+  text-transform: uppercase;
 }
 p.link {
   font-weight: bold;
@@ -188,25 +190,39 @@ p.label {
   line-height: 1em;
 }
 
+a:link {
+  color: var(--color2);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--color7);
+}
+
+a:hover {
+  color: var(--color1);
+}
+
+a:active {
+  color: var(--color6);
+}
+
 img {
   width: 100%;
 }
-
-address {
-  font-style: normal;
-  color: var(--color5);
-  }
  
 
 
-/* ------- header styles ------ */
+/* ------- header styles ------ */ 
 header {
   background-color: var(--color4);
+  display: flex;
+  justify-content: center;
   text-align: center;
   border-bottom: 3px solid var(--color1);
   width: 100%;
   margin: 0;
-  padding-right: 20px;
 }
 
 header .content-wrapper {
@@ -231,7 +247,7 @@ header .buttons {
 	text-align: left;
 }
 
-.button {
+header .button {
   background-color: var(--color2);
   border: none;
   padding: 10px 15px;
@@ -242,7 +258,7 @@ header .buttons {
   margin: 5px;
 }
 
-a.button {
+header a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
@@ -250,11 +266,11 @@ a.button {
   color: var(--color3);
 }
 
-.button:hover {
+header .button:hover {
   background-color: var(--color1);
 }
 
-.dropbtn {
+header .dropbtn {
   background-color: var(--color4);
   color: var(--color2);
   padding: 10px;
@@ -263,12 +279,12 @@ a.button {
   margin: 5px;
 }
 
-.dropdown{
+header .dropdown{
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content{
+header .dropdown-content{
   display: none;
   position: absolute;
   background-color: var(--color3);
@@ -280,7 +296,7 @@ a.button {
     margin-right:0px;
 }
 
-.dropdown-content a {
+header .dropdown-content a {
   color: var(--color5);
   padding: 12px 16px;
   text-decoration: none;
@@ -288,15 +304,15 @@ a.button {
   text-align: right;
 }
 
-.dropdown-content a:hover {
+header .dropdown-content a:hover {
   background-color: var(--color4);
 }
 
-.dropdown:hover .dropdown-content {
+header .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
+header .dropdown:hover .dropbtn {
   background-color: var(--color3);
   color: var(--color2);
 }
@@ -320,6 +336,7 @@ a.button {
 }
 
 
+
 /* ------ hero ----- */
 .hero {
   position: relative;
@@ -336,13 +353,13 @@ a.button {
 }
 
 
+
 /* ------ intro ----- */
 .introduction {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  border: 1px red solid;
 }
 
 .introduction h5 {
@@ -360,10 +377,10 @@ a.button {
 }
 
 
+
 /* ------ projects ----- */
 .projects {
   background-color: var(--color4);
-  border: 1px red solid;
 }
 
 .projects h1 {
@@ -393,13 +410,13 @@ a.button {
 }
 
 
+
 /* ------ about ----- */
 .about {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  border: 1px red solid;
 }
 
 .people, .cats {
@@ -430,6 +447,8 @@ a.button {
   margin: 1px;
 }
 
+
+
 /* ------ skills ----- */
 .skills {
   display: flex;
@@ -437,7 +456,6 @@ a.button {
   justify-content: center;
   align-items: center;
   background-color: var(--color4);
-  border: 1px red solid;
 }
 
 .skills-list {
@@ -456,7 +474,7 @@ a.button {
   margin: 30px 0;
 }
 
-.fontawesome-icon {
+.skill .fontawesome-icon {
   color: var(--color1);
   font-size: 50px;
   align-items: center;
@@ -473,13 +491,13 @@ a.button {
 }
 
 
+
 /* ------ work ----- */
 .work {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  border: 1px red solid;
 }
 
 .work-text h4.title {
@@ -489,6 +507,7 @@ a.button {
 .resume {
   margin: 25px 0 0 0;
 }
+
 
 
 /* ------ footer ------ */
@@ -504,21 +523,62 @@ footer {
 }
 
 footer .content-wrapper {
-  margin: 100px 0;
+  margin: 100px 0 25px 0;
   text-align: left;
 }
 
-footer .contact {
-  margin-bottom: 50px;
+.contact-form {
+  margin: 50px 0 75px 0;
 }
 
-footer .contact p {
+.address {
+  font-style: normal;
   color: var(--color5);
+  margin: 25px 0;
+}
+
+.address h5 {
+  margin: 0;
+}
+
+.business-card {
+  margin: 25px 0;
+}
+
+.social {
+  margin: 75px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  flex-flow: row wrap;
+  flex-direction: row;
+}
+
+.account {
+  width: 45%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-flow: row wrap;
+  flex-direction: row;
+}
+
+.social .fontawesome-icon {
+  color: var(--color2);
+  font-size: 30px;
+  align-items: center;
+  margin: 10px;
+}
+
+.social p {
+  color: var(--color2);
 }
 
 footer .copyright p {
-  color: var(--color4);
+  color: var(--color1);
+  font-weight: bold;
 }
+
 
 
 
