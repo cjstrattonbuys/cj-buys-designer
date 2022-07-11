@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -104,7 +104,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   color: var(--color5);
   display: flex;
 	justify-content: center;
@@ -129,27 +129,27 @@ h2 {
 }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 2.25rem;
   color: var(--color2);
   padding: 0px;
   margin: 0;
 }
 
 h2 {
-  font-size: 1.5em;
-  line-height: 1.25em;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   color: var(--color1);
 }
 
 h3 {
-  font-size: 1.5em;
-  line-height: 2.25em;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   color: var(--color5);
 }
 
 h4 {
-  font-size: 1.125em;
-  line-height: 1.375em;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   color: var(--color5);
   font-weight: bold;
 }
@@ -159,8 +159,8 @@ h4.link {
 }
 
 h5 {
-  font-size: 1.125em;
-  line-height: 1.375em;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   color: var(--color5);
   font-weight: normal;
 }
@@ -169,8 +169,8 @@ h5.hero {
 }
 
 p {
-  font-size: 1em;
-  line-height: 1.25em;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: var(--color5);
   font-weight: normal;
 }
@@ -186,8 +186,8 @@ p.link {
   color: var(--color2);
 }
 p.label {
-  font-size: 0.875em;
-  line-height: 1em;
+  font-size: 0.875rem;
+  line-height: 1rem;
 }
 
 a:link {
@@ -236,6 +236,7 @@ header .content-wrapper {
 
 header .logo {
   width: 35%;
+  padding: 5px 0;
 }
 
 header .buttons {
@@ -254,7 +255,6 @@ header .button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   margin: 5px;
 }
 
@@ -274,7 +274,7 @@ header .dropbtn {
   background-color: var(--color4);
   color: var(--color2);
   padding: 10px;
-  font-size: 1.5em;
+  font-size: 2rem;
   border: none;
   margin: 5px;
 }
@@ -288,7 +288,7 @@ header .dropdown-content{
   display: none;
   position: absolute;
   background-color: var(--color3);
-  min-width: 150px;
+  width: 250px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   left:auto;
@@ -477,8 +477,7 @@ header .dropdown:hover .dropbtn {
 .skill .fontawesome-icon {
   color: var(--color1);
   font-size: 50px;
-  align-items: center;
-  margin: 0;
+  margin: 0 0 5px 0;
 }
 
 .skill h4 {
@@ -558,15 +557,13 @@ footer .content-wrapper {
   width: 45%;
   display: flex;
   justify-content: left;
-  align-items: left;
+  align-items: center;
   flex-flow: row wrap;
-  flex-direction: row;
 }
 
 .social .fontawesome-icon {
   color: var(--color2);
   font-size: 30px;
-  align-items: center;
   margin: 10px;
 }
 
@@ -674,14 +671,316 @@ footer .copyright p {
 
 @media all and (min-width:768px) {
   /* ----- general styles ----- */
+  h1 {
+    font-size: 3.25rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h4,
+  h4.link {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  h5,
+  h5.a {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  p,
+  p.a {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .buttons a,
+  .dropdown-content a {
+    font-size: 1.25rem;
+  }
+
+  p.label {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+
+  .introduction, 
+  .projects, 
+  .about,
+  .skills,
+  .work {
+    padding: 125px 0;
+  }
+
+  .introduction .content-wrapper,
+  .about .content-wrapper,
+  .skills .content-wrapper,
+  .work .content-wrapper {
+  margin: 5px 2.6%;
+  }
+
+
+
+  /* ------- header ------- */
+  header .dropbtn {
+    font-size: 2.75rem;
+  }
+
+  header .dropdown-content{
+    width: 300px;
+  }
   
+
+
+  /* ------- intro -------- */
+  .introduction .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .introduction .image,
+  .introduction-text {
+    width: 48%;
+  }
+  
+  #cj-profile {
+    width: 100%;
+  }
+
+
+
+  /* ------- intro -------- */
+  .people {
+    justify-content: space-evenly;
+  }
+  .people .image {
+    width: 39%;
+  }
+
+
+
+  /* ------- skills -------- */
+  .skills-list {
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  .skill {
+    width: 39%;
+  }
+
+  .skill .fontawesome-icon {
+    font-size: 75px;
+    margin: 0 0 10px 0;
+  }
+
+
+
+  /* ------- footer -------- */
+  footer {
+    padding: 0 2.6%;
+  }
+  
+  footer .content-wrapper {
+    margin: 125px 0 40px 0;
+    text-align: left;
+  }
+  
+  .contact-form {
+    margin: 50px 0 75px 0;
+  }
+  
+  .address {
+    font-style: normal;
+    color: var(--color5);
+    margin: 40px 0;
+  }
+  
+  .address h5 {
+    margin: 0;
+  }
+  
+  .business-card {
+    margin: 40px 0;
+  }
+  
+  .social {
+    margin: 100px 0;
+  }
+  
+  .social .fontawesome-icon { 
+    font-size: 50px;
+    margin: 15px;
+  }
 }
 
 
 
 
-@media all and (min-width:1200px) {
+@media all and (min-width:1000px) {
+  h1 {
+    font-size: 3.25rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  h4,
+  h4.link {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  h5,
+  h5.a {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  p,
+  p.a {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  .buttons a,
+  .dropdown-content a {
+    font-size: 1.25rem;
+  }
+
+  p.label {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+
+  .introduction, 
+  .projects, 
+  .about,
+  .skills,
+  .work {
+    padding: 125px 0;
+  }
+
+  .introduction .content-wrapper,
+  .about .content-wrapper,
+  .skills .content-wrapper,
+  .work .content-wrapper {
+  margin: 5px 2.6%;
+  }
+
+
+
+  /* ------- header ------- */
+  header .dropbtn {
+    font-size: 2.75rem;
+  }
+
+  header .dropdown-content{
+    width: 300px;
+  }
   
+
+
+  /* ------- intro -------- */
+  .introduction .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .introduction .image,
+  .introduction-text {
+    width: 48%;
+  }
+  
+  #cj-profile {
+    width: 100%;
+  }
+
+
+
+  /* ------- intro -------- */
+  .people {
+    justify-content: space-evenly;
+  }
+  .people .image {
+    width: 39%;
+  }
+
+
+
+  /* ------- skills -------- */
+  .skills-list {
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  .skill {
+    width: 39%;
+  }
+
+  .skill .fontawesome-icon {
+    font-size: 75px;
+    margin: 0 0 10px 0;
+  }
+
+
+
+  /* ------- footer -------- */
+  footer {
+    padding: 0 2.6%;
+  }
+  
+  footer .content-wrapper {
+    margin: 125px 0 40px 0;
+    text-align: left;
+  }
+  
+  .contact-form {
+    margin: 50px 0 75px 0;
+  }
+  
+  .address {
+    font-style: normal;
+    color: var(--color5);
+    margin: 40px 0;
+  }
+  
+  .address h5 {
+    margin: 0;
+  }
+  
+  .business-card {
+    margin: 40px 0;
+  }
+  
+  .social {
+    margin: 100px 0;
+  }
+  
+  .social .fontawesome-icon { 
+    font-size: 50px;
+    margin: 15px;
+  }
 }
 
 @media print,
