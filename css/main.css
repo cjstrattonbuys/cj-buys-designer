@@ -244,7 +244,7 @@ header .logo {
 header .buttons {
   width: 60%;
   display: flex;
-	justify-content: right;
+	justify-content: flex-end;
 	align-items: center;
 	flex-flow: row wrap; 
 	text-align: left;
@@ -259,6 +259,14 @@ header .button {
   display: inline-block;
   margin: 5px;
 }
+
+.buttons .button {
+  background-color: var(--color2);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 
 header a.button {
   -webkit-appearance: button;
@@ -774,6 +782,13 @@ footer .copyright p {
 
 
 
+  /* ------- projects -------- */
+  .case-study .image {
+    margin-bottom: 10px;
+  }
+
+
+
   /* ------- about -------- */
   .people {
     justify-content: space-evenly;
@@ -786,7 +801,7 @@ footer .copyright p {
 
   /* ------- skills -------- */
   .skills-list {
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
   }
   
@@ -842,7 +857,13 @@ footer .copyright p {
 
 
 
-@media all and (min-width:1000px) {
+@media all and (min-width:1200px) {
+  /* ------- hero ------- */
+  h2 {
+    font-size: 3.25rem;
+    line-height: 4rem;
+  }
+
   /* ------- about -------- */
   .people .image {
     width: 30%;
@@ -851,10 +872,6 @@ footer .copyright p {
 
 
   /* ------- skills -------- */
-  .skills-list {
-    justify-content: space-between;
-  }
-
   .skill {
     width: 26%;
   }
@@ -896,7 +913,10 @@ footer .copyright p {
   
   .social {
     margin: 100px 0;
-    width: 60%;
+  }
+
+  .account {
+    width: 25%;
   }
   
   .social .fontawesome-icon { 
