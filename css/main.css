@@ -656,12 +656,24 @@ footer .copyright p {
   margin: 2.5%;
 }
 
+.process .beside {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.process .beside img {
+  width: 45%;
+}
+
 .case-study-section p,
 .case-study-section-last p {
   margin-bottom: 30px;
 }
 
-.case-study-image p.label {
+.case-study-image p.label,
+.case-study-image-beside p.label {
   padding: 0 2.5% 2.5% 2.5%;
 }
 
@@ -789,6 +801,7 @@ footer .copyright p {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
+
   h4.link {
     margin: 0 0 10px 0;
   }
@@ -819,10 +832,14 @@ footer .copyright p {
   .projects, 
   .about,
   .skills,
-  .work {
+  .work,
+  .project,
+  .process,
+  .conclusions {
     padding: 125px 0;
   }
 
+  .header .content-wrapper,
   .introduction .content-wrapper,
   .about .content-wrapper,
   .skills .content-wrapper,
@@ -941,6 +958,80 @@ footer .copyright p {
     font-size: 50px;
     margin: 15px;
   }
+
+
+
+  /* ------- case study ------- */
+  .centered {
+    display: flex;
+    justify-content: center;
+  } 
+  
+  .centered .case-study-image {
+    width: 75%;
+    margin: 0;
+  }
+
+  .centered p.label {
+    margin-bottom: 0;
+  }
+  
+  .column,
+  .column-even {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin: 33px 0 50px;
+    padding-bottom: 0;
+  }
+
+  .column p,
+  .column .case-study-image,
+  .column-even p,
+  .column-even .case-study-image {
+    margin-top: 0;
+    margin-bottom: 0px;
+    width: 47%;
+  }
+
+  .stack {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    width: 47%;
+  }
+
+  .column .case-study-image,
+  .column-even .case-study-image {
+    margin-bottom: 50px;
+  }
+
+  .column .case-study-image.no-bottom, 
+  .column-even .case-study-image.no-bottom {
+    margin-bottom: 0px;
+  }
+
+  .stack .case-study-image {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .column p,
+  .column-even p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .column p.label,
+  .column-even p.label,
+  .stack p.label {
+    width: 95%;
+  }
+
+
+  
 }
 
 
