@@ -103,7 +103,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Optima-Regular", sans-serif;
   font-size: 1rem;
   color: var(--color5);
   display: flex;
@@ -443,8 +443,8 @@ header .dropdown-content p {
   text-align: left;
 }
 
-#dorothy {
-  margin-bottom: 0;
+.case-study.no-bottom {
+  margin-bottom: 0px;
 }
 
 
@@ -619,6 +619,10 @@ footer .copyright p {
 /* ------- case study ------- */
 .case-study-hero {
   padding: 0 0 100px 0;
+}
+
+.case-study-hero img {
+  margin-bottom: 10px;
 }
 
 .case-study-hero,
@@ -1074,10 +1078,8 @@ footer .copyright p {
   .column-even p.label,
   .stack p.label {
     width: 95%;
-  }
-
-
-  
+    margin-bottom: 2.5%;
+  } 
 }
 
 
@@ -1089,6 +1091,8 @@ footer .copyright p {
     font-size: 3.25rem;
     line-height: 4rem;
   }
+
+
 
   /* ------- about -------- */
   .people .image {
