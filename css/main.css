@@ -116,7 +116,26 @@ body {
 .content-wrapper{
   margin: 0 auto;
   width: 100%;
-  }
+}
+
+.header .content-wrapper,
+.introduction .content-wrapper,
+.about .content-wrapper,
+.skills .content-wrapper,
+.work .content-wrapper {
+  margin: 5px 3.5%;
+}
+
+.introduction, 
+.projects, 
+.about,
+.skills,
+.work,
+.project,
+.process,
+.conclusions {
+  padding: 100px 0;
+}
 
 a {
   text-decoration: none;
@@ -153,6 +172,7 @@ h4 {
   color: var(--color5);
   font-weight: bold;
 }
+
 h4.link {
   color: var(--color2);
   margin: 0 0 5px 0;
@@ -164,6 +184,7 @@ h5 {
   color: var(--color5);
   font-weight: normal;
 }
+
 h5.hero {
   font-weight: bold;
   color: var(--color5);
@@ -176,17 +197,21 @@ p {
   color: var(--color5);
   font-weight: normal;
 }
+
 p.button{
   color: var(--color3);
 }
+
 p.type {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 p.link {
   font-weight: bold;
   color: var(--color2);
 }
+
 p.label {
   font-size: 0.875rem;
   line-height: 1rem;
@@ -197,18 +222,23 @@ a:link {
   font-weight: bold;
   text-decoration: underline;
 }
+
 .dropdown-content a {
   font-weight:normal;
 }
+
 .dropdown-content a.page{
   font-weight: bold;
 }
+
 a:visited {
   color: var(--color2);
 }
+
 a:hover {
   color: var(--color1);
 }
+
 a:active {
   color: var(--color6);
 }
@@ -231,7 +261,6 @@ header {
 }
 
 header .content-wrapper {
-  margin: 0 3.5%;
   display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -341,24 +370,6 @@ header .dropdown-content p {
 
 
 
-/* ------ main ----- */
-.introduction, 
-.projects, 
-.about,
-.skills,
-.work {
-  padding: 100px 0;
-}
-
-.introduction .content-wrapper,
-.about .content-wrapper,
-.skills .content-wrapper,
-.work .content-wrapper {
-  margin: 5px 3.5%;
-}
-
-
-
 /* ------ hero ----- */
 .hero {
   position: relative;
@@ -414,17 +425,22 @@ header .dropdown-content p {
   margin-top: 15px;
 }
 
-.case-study {
+.case-study,
+.case-study-intro {
   margin: 0 0 75px 0;
 }
 
 .case-study h3,
-.case-study p.type {
+.case-study p.type,
+.case-study-intro h3,
+.case-study-intro p.type {
   margin: 0px;
 }
 
-.case-study-text {
+.case-study-text,
+.case-study-intro {
   margin: 0 3.5%;
+  text-align: left;
 }
 
 #dorothy {
@@ -597,6 +613,67 @@ footer .copyright p {
   color: var(--color1);
   font-weight: bold;
 }
+
+
+
+/* ------- case study ------- */
+.case-study-hero {
+  padding: 0 0 100px 0;
+}
+
+.case-study-hero,
+.process {
+  background-color: var(--color4);
+}
+
+.project h1,
+.process h1,
+.conclusions h1 {
+  margin: 0 3.5% 10px 3.5%;;
+}
+
+.project h3,
+.process h3,
+.conclusions h3 {
+  margin: 0 0 10px 0;
+}
+
+.case-study-section {
+  margin: 0 3.5% 75px 3.5%;
+}
+
+.case-study-section-last{
+  margin: 0 3.5%;
+}
+
+.process .case-study-image {
+  background: white;
+  margin: 33px 0 50px 0;
+}
+
+.process .case-study-image img {
+  width: 95%;
+  margin: 2.5%;
+}
+
+.case-study-section p,
+.case-study-section-last p {
+  margin-bottom: 30px;
+}
+
+.case-study-image p.label {
+  padding: 0 2.5% 2.5% 2.5%;
+}
+
+.conclusions .case-study-image {
+  background: var(--color4);
+  margin: 33px 0 50px 0;
+}
+
+.conclusions .case-study-image img {
+  margin: 2.5% 0;
+}
+
 
 
 
