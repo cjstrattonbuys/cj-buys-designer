@@ -633,7 +633,7 @@ footer .copyright p {
 .project h1,
 .process h1,
 .conclusions h1 {
-  margin: 0 3.5% 10px 3.5%;;
+  margin: 0 3.5% 10px 3.5%;
 }
 
 .project h3,
@@ -653,6 +653,10 @@ footer .copyright p {
 .process .case-study-image {
   background: white;
   margin: 33px 0 50px 0;
+}
+
+.process .case-study-image.no-bottom {
+  margin-bottom: 0px;
 }
 
 .process .case-study-image img {
