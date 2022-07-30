@@ -340,7 +340,6 @@ header .dropdown-content{
 
 header .dropdown-content a {
   color: var(--color5);
-
   text-decoration: none;
   display: block;
   text-align: left;
@@ -687,10 +686,15 @@ footer .copyright p {
 }
 
 .column-mobile p,
-.column-mobile .case-study-image {
+.column-mobile .case-study-image,
+.column-mobile .stack {
   margin-top: 0;
   margin-bottom: 0px;
   width: 47%;
+}
+
+.column-mobile .stack p {
+  width: 100%;
 }
 
 .column-mobile .case-study-image.no-bottom,
@@ -796,17 +800,7 @@ footer .copyright p {
   margin: 2.5% 0;
 }
 
-#sketch-mobile {
-  width: 25.33%;
-}
 
-#sketch-tablet {
-  width: 60.80%;
-}
-
-#sketch-desktop {
-  width: 95%;
-}
 
 #csb-mockup-01,
 #csb-mockup-02 {
@@ -1180,6 +1174,18 @@ footer .copyright p {
   .column-two-thirds {
     width: 58%;
     margin-top: 33px;
+  }
+
+  #sketch-mobile {
+    width: 25.33%;
+  }
+  
+  #sketch-tablet {
+    width: 60.80%;
+  }
+  
+  #sketch-desktop {
+    width: 95%;
   }
 }
 
