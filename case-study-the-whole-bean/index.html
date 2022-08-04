@@ -32,28 +32,40 @@
 
   <!-- Add your site or application content here -->
   <header>
-    <div class="content-wrapper">
+    <div class="header-content">
       <div class="logo">
-        <a href="../index.html">
-          <img src="../img/cjbuys-logo.png" alt="A logo of a flower made of two green leaves and a purple gear as a blossom, with text reading CJ Buys, Visual Designer" id="cj-buys-logo" />
-        </a>
+        <a href="../index.html"><img src="../img/cjbuys-logo.png" alt="A logo of a flower made of two green leaves and a purple gear as a blossom, with text reading CJ Buys, Visual Designer" id="cj-buys-logo" /></a>
       </div>
       <div class=buttons>
-        <a href="#contact" class="button">Contact me</a>
         <nav>
           <div class="dropdown w3-right">
-            <button class="dropbtn"  title="Hover for navigation menu"><i class="fa fa-bars"></i></button>
-            <div class="dropdown-content">
+            <button class="dropbtn">Portfolio</button>
+            <div class="dropdown-content" id="portfolio">
               <a href="../index.html"><p><strong>CJ Buys Portfolio</strong></p></a>
-              <a href="../case-study-cj-buys/index.html"><p><strong>Case Study: CJ Buys</strong></p></a>
-              <a href="index.html"><p><strong>Case Study: The Whole Bean</strong></p></a>
-                <a href="index.html#project" class="subpage">The Project</a>
-                <a href="index.html#process" class="subpage">The Process</a>
-                <a href="index.html#conclusions" class="subpage">Conclusions</a>
-                <a href="#contact" class="subpage">Contact me</a>
-              <a href="../case-study-sit-conmigo/index.html"><p><strong>Case Study: Sit Conmigo</strong></p></a>
+                <a href="../index.html/#projects-link" class="subpage">What I do</a>
+                <a href="../index.html/#about-link" class="subpage">What drives me</a>
+                <a href="../index.html/#skills-link" class="subpage">What I bring to the table</a>
+                <a href="../index.html/#work-link" class="subpage">Where to see my work</a>
             </div>
           </div>
+          <div class="dropdown w3-right">
+            <button class="dropbtn">Case Studies</button>
+            <div class="dropdown-content" id="case-studies">
+              <a href="../case-study-cj-buys/index.html"><p><strong>CJ Buys</strong></p></a>
+                <a href="../case-study-cj-buys/index.html#project-link" class="subpage">The Project</a>
+                <a href="../case-study-cj-buys/index.html#process-link" class="subpage">The Process</a>
+                <a href="../case-study-cj-buys/index.html#conclusions-link" class="subpage">Conclusions</a>
+              <a href="index.html"><p><strong>The Whole Bean</strong></p></a>
+                <a href="#project-link" class="subpage">The Project</a>
+                <a href="#process-link" class="subpage">The Process</a>
+                <a href="#conclusions-link" class="subpage">Conclusions</a>
+              <a href="../case-study-sit-conmigo/index.html"><p><strong>Sit Conmigo</strong></p></a>
+                <a href="../case-study-sit-conmigo/index.html#project-link" class="subpage">The Project</a>
+                <a href="../case-study-sit-conmigo/index.html#process-link" class="subpage">The Process</a>
+                <a href="../case-study-sit-conmigo/index.html#conclusions-link" class="subpage">Conclusions</a>
+            </div>
+          </div>
+          <a href="#contact-link" class="button">Contact me</a>
         </nav>
       </div>
     </div>
@@ -64,16 +76,18 @@
     <section class="case-study-hero" id="the-whole-bean">
       <img src="../img/mockup-the-whole-bean.png" alt="A white mug with a logo - a yellow B with a coffee bean in the B's lower hole - on a dark green background" id="the-whole-bean-mockup" />
       <div class="case-study-intro">
-        <h3>The Whole Bean</h3>
-        <h6>Style Guide</h6>
-        <p>A small-town coffee shop comes to life in a style guide filled with bright, warm colors, evocative graphics, and accessible updates</p>
-        <p><strong>Skills:</strong> Brand and identity design, color and typography, graphic design, style guide creation, accessibility assessment and updates</p>
-        <p><strong>Tools:</strong> Photoshop, Illustrator, InDesign</p>
+        <div class="content-wrapper"> 
+          <h3>The Whole Bean</h3>
+          <h6>Style Guide</h6>
+          <p>A small-town coffee shop comes to life in a style guide filled with bright, warm colors, evocative graphics, and accessible updates</p>
+          <p><strong>Skills:</strong> Brand and identity design, color and typography, graphic design, style guide creation, accessibility assessment and updates</p>
+          <p><strong>Tools:</strong> Photoshop, Illustrator, InDesign</p>
+      </div>
       </div>
     </section>
 
 
-    <section class="project" id="project">
+    <section class="project" id="project-link">
       <div class="content-wrapper">
         <h2>The Project</h2>
 
@@ -87,14 +101,14 @@
           <p>Deliverables for this project included a brand personality, a mission statement, color palette, font pairing and typography guide, set of logos, set of graphics, set of stock images, set of social media headers, and a style guide which compiled the deliverables and guidance on their usage into one document. Deliverables were created using Adobe Photoshop, Illustrator, and InDesign, and were delivered in their original format and as PNGs or PDFs.</p>
         </div>
 
-        <div class="case-study-section-last">
+        <div class="case-study-section no-bottom">
           <h3>Project role</h3>
           <p>I received a project brief from the client and created the deliverables from that information. As the client was fictional, there was no direct communication with the client, but I did frequently seek out and receive feedback from others throughout the process.</p>
         </div>
       </div>
     </section>
 
-    <section class="process" id="process">
+    <section class="process" id="process-link">
       <div class="content-wrapper">
         <h2>The Process</h2>
 
@@ -133,12 +147,13 @@
         <div class="case-study-section">
           <h3>Bringing the brand to life</h3>
           <div class="column">
-            <p>When it came to designing the logo, I knew that I wanted to lean more into the open, friendly aspects of the brand in order to create connection with customers and draw them in. My initial logo concept combined three components: hands holding a to-go coffee cup, with the fingers and thumbs of the hands forming a heart. Two problems jumped out, though. Firstly, the hands couldn’t simultaneously hold the coffee cup, form a heart, and be easily recognizable as hands without raising questions that would just distract customers. And secondly, I didn’t like the coffee cup. Although a to-go cup was more recognizable than a standard mug, especially when half-hidden behind the rest of the logo, it evoked a grab-and-go mentality that just didn’t fit The Whole Bean.</p>
+            <p>When it came to designing the logo, I knew that I wanted to lean more into the open, friendly aspects of the brand in order to create connection with customers and draw them in. My initial logo concept combined three components: hands holding a to-go coffee cup, with the fingers and thumbs of the hands forming a heart.</p>
             <div class="case-study-image">
               <img src="../img/twb-logos-sketch-coffee-cup-heart.png" alt="A sketch of hands holding a to-go coffee cup, fingers and thumbs forming a heart" id="logo-sketch" />
               <p class="label">Initial logo sketch - a to-go coffee cup and hands forming a heart</p>
             </div>
           </div>
+          <p>Two problems jumped out, though. Firstly, the hands couldn’t simultaneously hold the coffee cup, form a heart, and be easily recognizable as hands without raising questions that would just distract customers. And secondly, I didn’t like the coffee cup. Although a to-go cup was more recognizable than a standard mug, especially when half-hidden behind the rest of the logo, it evoked a grab-and-go mentality that just didn’t fit The Whole Bean.</p>
           <p>I scrapped the idea of a coffee mug on the logo, but not entirely - I knew that a standard coffee mug would be the perfect icon to represent the menu and invite customers to skip the to-go cup in favor of sitting down and savoring their drink. I based the icon on a heavy earthenware mug with soft curves, a mug that would radiate warmth and be a pleasure to wrap your hands around, and then reinforced that comforting image by coloring the mug with the warm golden yellow shade and a subtle saffron gradient to create depth, and filling it with a dark, rich coffee brown. I then used this same color scheme to create a coffee bag logo to represent the products and remind customers that they can also savor The Whole Bean’s coffee in their own homes. A saffron panel gave depth to the yellow bag, and a brown label completed both the color scheme and the icon.</p>
           <div class="centered">
             <div class="case-study-image">
@@ -146,17 +161,15 @@
               <p class="label">Inspiration images (left) and icons (right) for the coffee mug (top) and coffee bag (bottom) icons</p>
             </div>
           </div>
+          <p>Returning to the logo, I sketched a few new designs, lingering on the idea of using a French press to evoke truly excellent coffee or a parrot to connect The Whole Bean more clearly with the rainforests where coffee grows, but neither quite fit a brand rooted in the community whose store concept specifically referenced drip coffee. In the end, the most authentic and sincere image to represent the whole of The Whole Bean’s brand was the simplest - a coffee bean. Keeping it simple leant the logo a down-to-earth feel and said that the reputation of The Whole Bean could and would stand on the quality of its coffee. Placing the coffee bean into the lower counter of the letter B in the brand’s main font and bright yellow color reinforced the brand’s warm, open personality and created an instantly recognizable logo. It also opened the door for a series of logos: I placed the simple B logo within the context of “The Whole Bean” to create a longer logo that would increase brand recognition with newer customers, and then created saffron and yellow-green versions of both logos, allow for some limited variation within the brand’s style.</p>
           <div class="column">
-            <p>Returning to the logo, I sketched a few new designs, lingering on the idea of using a French press to evoke truly excellent coffee or a parrot to connect The Whole Bean more clearly with the rainforests where coffee grows, but neither quite fit a brand rooted in the community whose store concept specifically referenced drip coffee. In the end, the most authentic and sincere image to represent the whole of The Whole Bean’s brand was the simplest - a coffee bean. Keeping it simple leant the logo a down-to-earth feel and said that the reputation of The Whole Bean could and would stand on the quality of its coffee. Placing the coffee bean into the lower counter of the letter B in the brand’s main font and bright yellow color reinforced the brand’s warm, open personality and created an instantly recognizable logo. It also opened the door for a series of logos: I placed the simple B logo within the context of “The Whole Bean” to create a longer logo that would increase brand recognition with newer customers, and then created saffron and yellow-green versions of both logos, allow for some limited variation within the brand’s style.</p>
-            <div class="stack">
-              <div class="case-study-image">
-                <img src="../img/twb-logos-sketches.png" alt="Sketches of logo ideas, including an uppercase B with a coffee bean in the lower opening, a french press of coffee with a steam heart, the same french press but with a parrot perching on it, and the original hands-and-coffee-cup sketch" id="logo-sketches" />
-                <p class="label">Logo sketches, including the final concept of a coffee bean in a B (upper left), a French press with a steam heart (upper right), the original to-go cup logo (lower left), and a modification of the French press logo featuring a parrot (lower right)</p>
-              </div>
-              <div class="case-study-image">
-                <img src="../img/twb-logos-original.png" alt="Three small logos featuring an uppercase B in yellow, saffron orange, or light green, all with a dark brown coffee bean in the lower hole, and three long logos of 'The Whole Bean' with the B replaced with the smaller logo" id="logos-original" />
-                <p class="label">Logo design and variations</p>
-              </div>
+            <div class="case-study-image">
+              <img src="../img/twb-logos-sketches.png" alt="Sketches of logo ideas, including an uppercase B with a coffee bean in the lower opening, a french press of coffee with a steam heart, the same french press but with a parrot perching on it, and the original hands-and-coffee-cup sketch" id="logo-sketches" />
+              <p class="label">Logo sketches, including the final concept of a coffee bean in a B (upper left), a French press with a steam heart (upper right), the original to-go cup logo (lower left), and a modification of the French press logo featuring a parrot (lower right)</p>
+            </div>
+            <div class="case-study-image">
+              <img src="../img/twb-logos-original.png" alt="Three small logos featuring an uppercase B in yellow, saffron orange, or light green, all with a dark brown coffee bean in the lower hole, and three long logos of 'The Whole Bean' with the B replaced with the smaller logo" id="logos-original" />
+              <p class="label">Logo design and variations</p>
             </div>
           </div>
           <p>The original yellow logo would be prioritized in branding, however, and it was a perfect social media icon, drawing the eye and immediately identifying the brand and its focus on coffee at a glance. I selected the straightforward display name and username of “The Whole Bean” and “TheWholeBean”, respectively, to allow for easy identification between the shop and the social media account. For the social media headers, I selected images from the photography collection that carried a sense of motion and life in them, images that would pull the viewer in and make them feel like they could be a part of the scene, if only they were at The Whole Bean.</p>
@@ -175,16 +188,17 @@
           </div>
         </div>
 
-        <div class="case-study-section-last">
+        <div class="case-study-section no-bottom">
           <h3>Redesigning for accessibility</h3>
           <p>The project deliverables were ready to be shipped, but I knew that there was still one thing left that would hold The Whole Bean back from becoming everything it could be. If The Whole Bean was all about welcoming people into its warm, inviting heart, were they welcoming everyone, or were some people getting left out? I’d mentioned in the style guide that branding images should include people of all genders, races, and abilities, but I knew that those were empty sentiments if the branding itself excluded disabled people. It was clear: I had to pause shipping the deliverables to assess their accessibility and address any issues that I found.</p>
           <div class="column">
-            <p>The first step I took was to compare all of the colors to each other to see if they contrasted enough to be clearly legible and, while some combinations were safe, others were clearly a problem. Looking at the patterns, my biggest concerns were that the medium green I had used for the style guide’s text and the yellow, orange, and light green I’d used for the logos and icons were all too light to be legible against the white backgrounds. I selected a darker shade of the medium green that had sufficient contrast against the white background and replaced all medium green text with the new shade, and then added the dark green to the color scheme as an accent color. I also added a thin black border around each of the swatches in the color scheme, to increase the lighter colors’ visibility against the white background.</p>
+            <p>The first step I took was to compare all of the colors to each other to see if they contrasted enough to be clearly legible and, while some combinations were safe, others were clearly a problem.</p>
             <div class="case-study-image">
               <img src="../img/twb-colors-accessibility.png" alt="A table detailing all accessible color combinations for the brand colors" id="colors-accessibility" />
               <p class="label">Accessible combinations of all of the brand colors</p>
             </div>
           </div>
+          <p>Looking at the patterns, my biggest concerns were that the medium green I had used for the style guide’s text and the yellow, orange, and light green I’d used for the logos and icons were all too light to be legible against the white backgrounds. I selected a darker shade of the medium green that had sufficient contrast against the white background and replaced all medium green text with the new shade, and then added the dark green to the color scheme as an accent color. I also added a thin black border around each of the swatches in the color scheme, to increase the lighter colors’ visibility against the white background.</p>
           <p>To address the contrast issues in the logos and icons, I added a thin brown border to them; because the yellow, orange, light green, and white all had sufficient contrast with brown, the outlining provided the contrast necessary to place the inaccessible colors next to each other without sacrificing legibility or understanding. I then added the same outlining to the main brand font examples in the typography examples and the logos in the social media headers, and added a small brown bar behind the logo in the social media header images to reduce business and improve legibility and recognition.</p>
           <div class="column">
             <div class="case-study-image no-bottom">
@@ -212,35 +226,40 @@
     </section>
 
 
-    <section class="conclusions" id="conclusions">
-      <h2>Project conclusion</h2>
-      <div class="case-study-image">
+    <section class="conclusions" id="conclusions-link">
+      <div class="content-wrapper">
+        <h2>Project conclusion</h2>
+      </div>
+      
+      <div class="case-study-mockup">
         <img src="../img/twb-mockup-style-guide-01-green.png" alt="The full style guide, ten pages on a green background" id="style-guide-mockup" />
         <p class=label>The full style guide</p>
       </div>
 
-      <div class="case-study-section">
-        <h3>Challenges</h3>
-        <p>I noted two major challenges during the design process. Firstly, while designing the logo, some of my original concept sketches failed to fully connect with key aspects of the brand’s personality, such as a to-go cup and a French press to represent a sit-and-savor brand that features drip coffee. My original sketch also featured a physically impossible floating coffee cup, which would’ve created more questions than customers. I realized I was so focused on the concept of the logo that I was failing to truly root it in the brand. Once I took a step back and designed from the brand up instead of from the logo down, the result was both a better representation of the brand and a far more evocative logo.</p>
-        <p>Secondly, the process of converting The Whole Bean to an accessible brand was rife with challenges. It was certainly possible to break down the accessibility challenges and address them both individually and holistically, but most of those challenges could’ve been avoided by assessing and addressing accessibility issues from the beginning of the design process. However, not all brands choose to prioritize accessibility when they’re just starting out, and it’s wonderful to see just how possible accessibility updates are.</p>
-      </div>
-
-      <div class="case-study-section">
-        <h3>Conclusion</h3>
-        <p>The style guide and associated components were delivered to the client before the requested deadline. This allowed her to create everything she needed to establish The Whole Bean within her community before the launch, from signs and menus for the shop itself to social media accounts and advertisements that raised awareness and interest. Throughout the process, the style guide provided guidance for and cohesion to everything she created, supporting and reinforcing the branding and the brand through a successful launch and for years to come.</p>
-      </div>
-
-      <div class="case-study-section-last">
-        <h3>Take a closer look</h3>
-        <h4 class="link"><a href="../img/twb-accessible-style-guide.pdf" download="cjbuys-the-whole-bean-style-guide">Download style guide (PDF) >></a></h4>
+      <div class="content-wrapper">
+        <div class="case-study-section">
+          <h3>Challenges</h3>
+          <p>I noted two major challenges during the design process. Firstly, while designing the logo, some of my original concept sketches failed to fully connect with key aspects of the brand’s personality, such as a to-go cup and a French press to represent a sit-and-savor brand that features drip coffee. My original sketch also featured a physically impossible floating coffee cup, which would’ve created more questions than customers. I realized I was so focused on the concept of the logo that I was failing to truly root it in the brand. Once I took a step back and designed from the brand up instead of from the logo down, the result was both a better representation of the brand and a far more evocative logo.</p>
+          <p>Secondly, the process of converting The Whole Bean to an accessible brand was rife with challenges. It was certainly possible to break down the accessibility challenges and address them both individually and holistically, but most of those challenges could’ve been avoided by assessing and addressing accessibility issues from the beginning of the design process. However, not all brands choose to prioritize accessibility when they’re just starting out, and it’s wonderful to see just how possible accessibility updates are.</p>
+        </div>
+  
+        <div class="case-study-section">
+          <h3>Conclusion</h3>
+          <p>The style guide and associated components were delivered to the client before the requested deadline. This allowed her to create everything she needed to establish The Whole Bean within her community before the launch, from signs and menus for the shop itself to social media accounts and advertisements that raised awareness and interest. Throughout the process, the style guide provided guidance for and cohesion to everything she created, supporting and reinforcing the branding and the brand through a successful launch and for years to come.</p>
+        </div>
+  
+        <div class="case-study-section no-bottom">
+          <h3>Take a closer look</h3>
+          <h4 class="link"><a href="../img/twb-accessible-style-guide.pdf" download="cjbuys-the-whole-bean-style-guide">Download style guide (PDF) >></a></h4>
+        </div>
       </div>
     </section>
   </main>
 
 
   <footer>
-    <div id="contact" class="content-wrapper">
-      <div class="footer-content">
+    <div id="contact-link" class="footer-content">
+      <div class="content-wrapper">
         <h2>Contact me</h2>
           <h5>If you're interested in working together or just have a question, please don't hesitate to reach out through the form or any of the links below. I'm happy to hear from you!</h5>
         <div class="contact-form">
@@ -252,7 +271,7 @@
           <h5>Location: Orlando, FL</h5>
         </div>
         <div class="business-card">
-          <h4 class=link><a href="../img/cjbuys-business-card.png" download="CJBuys-Business-Card">Download my business card >></a></h4>
+          <h4 class=link><a href="img/cjbuys-business-card.png" download="CJBuys-Business-Card">Download my business card >></a></h4>
         </div>
         <div class="social">
           <div class="account">
@@ -268,10 +287,10 @@
             <p><a href="https://www.instagram.com/cjstrattonbuys/" target="_blank"><i class="fa fa-instagram"></i>Instagram</a></p>
           </div>
         </div>
+        <div class="copyright">
+          <p>Copyright 2022 | CJ Buys</p>
+        </div>
       </div>
-    </div>
-    <div class="copyright">
-      <p>Copyright 2022 | CJ Buys</p>
     </div>
   </footer>
 

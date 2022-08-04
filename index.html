@@ -31,28 +31,40 @@
 
   <!-- Add your site or application content here -->
   <header>
-    <div class="content-wrapper">
+    <div class="header-content">
       <div class="logo">
         <a href="index.html"><img src="img/cjbuys-logo.png" alt="A logo of a flower made of two green leaves and a purple gear as a blossom, with text reading CJ Buys, Visual Designer" id="cj-buys-logo" /></a>
       </div>
       <div class=buttons>
-        <a href="#contact" class="button">Contact me</a>
         <nav>
           <div class="dropdown w3-right">
-            <button class="dropbtn"  title="Hover for navigation menu"><i class="fa fa-bars"></i></button>
-            <div class="dropdown-content">
+            <button class="dropbtn">Portfolio</button>
+            <div class="dropdown-content" id="portfolio">
               <a href="index.html"><p><strong>CJ Buys Portfolio</strong></p></a>
-                <a href="#introduction" class="subpage">Who I am</a>
-                <a href="#projects" class="subpage">What I do</a>
-                <a href="#about" class="subpage">What drives me</a>
-                <a href="#skills" class="subpage">What I bring to the table</a>
-                <a href="#work" class="subpage">Where to see my work</a>
-                <a href="#contact" class="subpage">Contact me</a>
-              <a href="case-study-cj-buys/index.html"><p><strong>Case Study: CJ Buys</strong></p></a>
-              <a href="case-study-the-whole-bean/index.html"><p><strong>Case Study: The Whole Bean</strong></p></a>
-              <a href="case-study-sit-conmigo/index.html"><p><strong>Case Study: Sit Conmigo</strong></p></a>
+                <a href="#projects-link" class="subpage">What I do</a>
+                <a href="#about-link" class="subpage">What drives me</a>
+                <a href="#skills-link" class="subpage">What I bring to the table</a>
+                <a href="#work-link" class="subpage">Where to see my work</a>
             </div>
           </div>
+          <div class="dropdown w3-right">
+            <button class="dropbtn">Case Studies</button>
+            <div class="dropdown-content" id="case-studies">
+              <a href="case-study-cj-buys/index.html"><p><strong>CJ Buys</strong></p></a>
+                <a href="case-study-cj-buys/index.html#project-link" class="subpage">The Project</a>
+                <a href="case-study-cj-buys/index.html#process-link" class="subpage">The Process</a>
+                <a href="case-study-cj-buys/index.html#conclusions-link" class="subpage">Conclusions</a>
+              <a href="case-study-the-whole-bean/index.html"><p><strong>The Whole Bean</strong></p></a>
+                <a href="case-study-the-whole-bean/index.html#project-link" class="subpage">The Project</a>
+                <a href="case-study-the-whole-bean/index.html#process-link" class="subpage">The Process</a>
+                <a href="case-study-the-whole-bean/index.html#conclusions-link" class="subpage">Conclusions</a>
+              <a href="case-study-sit-conmigo/index.html"><p><strong>Sit Conmigo</strong></p></a>
+                <a href="case-study-sit-conmigo/index.html#project-link" class="subpage">The Project</a>
+                <a href="case-study-sit-conmigo/index.html#process-link" class="subpage">The Process</a>
+                <a href="case-study-sit-conmigo/index.html#conclusions-link" class="subpage">Conclusions</a>
+            </div>
+          </div>
+          <a href="#contact" class="button">Contact me</a>
         </nav>
       </div>
     </div>
@@ -60,33 +72,37 @@
 
 
   <main>
-    <section class="hero" id="hero">
-      <img src="img/hero-image.png" alt="Background" style="width:100%;" />
+    <section id="hero-link">
+      <div class="hero">
+        <img src="img/hero-image.png" alt="Background" style="width:100%;" />
       <h1 class="bottom-left">Creating connection, one design at a time</h1>
+      </div>
     </section>
 
 
-    <section class="introduction" id="introduction">
-      <div class="content-wrapper">
+    <section id="introduction-link">
+      <div class="introduction content-wrapper">
         <div class="image">
           <img src="img/cj-profile.JPG" alt="CJ Buys, a white genderqueer person, looking off into the distance" id="cj-profile" />
         </div>
         <div class=introduction-text>
-          <h5 class="hero">Hello, I'm CJ Buys [they/them] and I create intuitive, crisp, and beautifully accessible designs.</h5>
+          <h5 class="introduction-emphasis">Hello, I'm CJ Buys [they/them] and I create intuitive, crisp, and beautifully accessible designs.</h5>
           <h5>I believe in designing for "a vulnerable user, instead of an average user", to quote Bumble's Lara Mendonça, and I center this throughout my design process to ensure that every aspect of the design is inherently and seamlessly accessible and welcoming.</h5>
         </div>
       </div>
     </section>
     
 
-    <section class="projects" id="projects">
+    <section class="projects" id="projects-link">
       <div class="content-wrapper">
         <h2>What I do</h2>
-        <div class="case-studies">
-          <div class="case-study">
-            <div class="image">
-              <img src="img/mockup-cj-buys.png" alt="Mobile phone, laptop, and tablet mockups of a website featuring a succulent, all on a dark green background" id="cj-buys-mockup" />
-            </div>
+      </div>
+      <div class="case-studies">
+        <div class="case-study">
+          <div class="image">
+            <img src="img/mockup-cj-buys.png" alt="Mobile phone, laptop, and tablet mockups of a website featuring a succulent, all on a dark green background" id="cj-buys-mockup" />
+          </div>
+          <div class="content-wrapper">
             <div class="case-study-text">
               <h3>CJ Buys</h3>
               <h6>Web Design</h6>
@@ -94,10 +110,12 @@
               <a href="case-study-cj-buys/index.html">View CJ Buys case study >></a>
             </div>
           </div>
-          <div class="case-study">
-            <div class="image">
-              <img src="img/mockup-the-whole-bean.png" alt="A white mug with a logo - a yellow B with a coffee bean in the B's lower hole - on a dark green background" id="the-whole-bean-mockup" />
-            </div>
+        </div>
+        <div class="case-study">
+          <div class="image">
+            <img src="img/mockup-the-whole-bean.png" alt="A white mug with a logo - a yellow B with a coffee bean in the B's lower hole - on a dark green background" id="the-whole-bean-mockup" />
+          </div>
+          <div class="content-wrapper">
             <div class="case-study-text">
               <h3>The Whole Bean</h3>
               <h6>Style Guide</h6>
@@ -105,10 +123,12 @@
               <a href="case-study-the-whole-bean/index.html">View The Whole Bean case study >></a>
             </div>
           </div>
-          <div class="case-study no-bottom">
-            <div class="image">
-              <img src="img/mockup-sit-conmigo.png" alt="Laptop, desktop computer, mobile phone, and tablet mockups of a website featuring images of chairs, all on a purple background" id="sit-conmigo-mockup" />  
-            </div>
+        </div>
+        <div class="case-study no-bottom">
+          <div class="image">
+            <img src="img/mockup-sit-conmigo.png" alt="Laptop, desktop computer, mobile phone, and tablet mockups of a website featuring images of chairs, all on a purple background" id="sit-conmigo-mockup" />  
+          </div>
+          <div class="content-wrapper">
             <div class="case-study-text">
               <h3>Sit Conmigo</h3>
               <h6>Web Design</h6>
@@ -121,7 +141,7 @@
     </section>
     
         
-    <section class="about" id="about">
+    <section class="about" id="about-link">
       <div class="content-wrapper">
         <h2>What drives me</h2>
         <div class="about-section">
@@ -161,7 +181,7 @@
     </section>
 
 
-    <section class="skills" id="skills">
+    <section class="skills" id="skills-link">
       <div class="content-wrapper">
         <h2>What I bring to the table</h2>
         <div class="skills-list">
@@ -212,11 +232,11 @@
     </section>
 
 
-    <section class="work" id="work">
+    <section class="work" id="work-link">
       <div class="content-wrapper">
         <h2>Where to see my work</h2>
         <div class="work-text">
-          <h4 class="title">To see more of my skills, experience, and background, please see my resume:</h4>
+          <h4>To see more of my skills, experience, and background, please see my resume:</h4>
           <div class="resume">
             <h4 class="link"><a href="img/cjbuys-resume-20220730.pdf" download="CJBuys-Resume">Download my resume (PDF) >></a></h4>
             <h4 class="link"><a href="https://docs.google.com/document/d/17vZPxhkvQilbjWvwO1Kcb5uGaibguODJ7P1FogxQBOg/edit#heading=h.2v5gbirxd0cr" target="_blank">View my resume (GoogleDocs) >></a></h4>
@@ -228,8 +248,8 @@
 
 
   <footer>
-    <div id="contact" class="content-wrapper">
-      <div class="footer-content">
+    <div id="contact-link" class="footer-content">
+      <div class="content-wrapper">
         <h2>Contact me</h2>
           <h5>If you're interested in working together or just have a question, please don't hesitate to reach out through the form or any of the links below. I'm happy to hear from you!</h5>
         <div class="contact-form">
@@ -257,10 +277,10 @@
             <p><a href="https://www.instagram.com/cjstrattonbuys/" target="_blank"><i class="fa fa-instagram"></i>Instagram</a></p>
           </div>
         </div>
+        <div class="copyright">
+          <p>Copyright 2022 | CJ Buys</p>
+        </div>
       </div>
-    </div>
-    <div class="copyright">
-      <p>Copyright 2022 | CJ Buys</p>
     </div>
   </footer>
 

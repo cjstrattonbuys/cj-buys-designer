@@ -32,48 +32,61 @@
 
   <!-- Add your site or application content here -->
   <header>
-    <div class="content-wrapper">
+    <div class="header-content">
       <div class="logo">
-        <a href="../index.html">
-            <img src="../img/cjbuys-logo.png" alt="A logo of a flower made of two green leaves and a purple gear as a blossom, with text reading CJ Buys, Visual Designer" id="cj-buys-logo" />
-          </a>
+        <a href="../index.html"><img src="../img/cjbuys-logo.png" alt="A logo of a flower made of two green leaves and a purple gear as a blossom, with text reading CJ Buys, Visual Designer" id="cj-buys-logo" /></a>
       </div>
       <div class=buttons>
-        <a href="#contact" class="button">Contact me</a>
         <nav>
           <div class="dropdown w3-right">
-            <button class="dropbtn"  title="Hover for navigation menu"><i class="fa fa-bars"></i></button>
-            <div class="dropdown-content">
+            <button class="dropbtn">Portfolio</button>
+            <div class="dropdown-content" id="portfolio">
               <a href="../index.html"><p><strong>CJ Buys Portfolio</strong></p></a>
-              <a href="../case-study-cj-buys/index.html"><p><strong>Case Study: CJ Buys</strong></p></a>
-              <a href="../case-study-the-whole-bean/index.html"><p><strong>Case Study: The Whole Bean</strong></p></a>
-              <a href="index.html"><p><strong>Case Study: Sit Conmigo</strong></p></a>
-                <a href="index.html#project" class="subpage">The Project</a>
-                <a href="index.html#process" class="subpage">The Process</a>
-                <a href="index.html#conclusions" class="subpage">Conclusions</a>
-                <a href="#contact" class="subpage">Contact me</a>
+                <a href="../index.html/#projects-link" class="subpage">What I do</a>
+                <a href="../index.html/#about-link" class="subpage">What drives me</a>
+                <a href="../index.html/#skills-link" class="subpage">What I bring to the table</a>
+                <a href="../index.html/#work-link" class="subpage">Where to see my work</a>
             </div>
           </div>
+          <div class="dropdown w3-right">
+            <button class="dropbtn">Case Studies</button>
+            <div class="dropdown-content" id="case-studies">
+              <a href="../case-study-cj-buys/index.html"><p><strong>CJ Buys</strong></p></a>
+                <a href="../case-study-cj-buys/index.html#project-link" class="subpage">The Project</a>
+                <a href="../case-study-cj-buys/index.html#process-link" class="subpage">The Process</a>
+                <a href="../case-study-cj-buys/index.html#conclusions-link" class="subpage">Conclusions</a>
+              <a href="../case-study-the-whole-bean/index.html"><p><strong>The Whole Bean</strong></p></a>
+                <a href="../case-study-the-whole-bean/index.html#project-link" class="subpage">The Project</a>
+                <a href="../case-study-the-whole-bean/index.html#process-link" class="subpage">The Process</a>
+                <a href="../case-study-the-whole-bean/index.html#conclusions-link" class="subpage">Conclusions</a>
+              <a href="index.html"><p><strong>Sit Conmigo</strong></p></a>
+                <a href="#project-link" class="subpage">The Project</a>
+                <a href="#process-link" class="subpage">The Process</a>
+                <a href="#conclusions-link" class="subpage">Conclusions</a>
+            </div>
+          </div>
+          <a href="#contact-link" class="button">Contact me</a>
         </nav>
       </div>
     </div>
   </header>
 
-
   <main>
     <section class="case-study-hero" id="sit-conmigo">
         <img src="../img/mockup-sit-conmigo.png" alt="Laptop, desktop computer, mobile phone, and tablet mockups of a website featuring images of chairs, all on a green background" id="sit-conmigo-mockup" />
         <div class="case-study-intro">
+          <div class="content-wrapper">
             <h3>Sit Conmigo</h3>
             <h6>Web design</h6>
             <p>Modern design and an ecological theme come together to show off a sustainable, fair trade, and fair labor char company's new products</p>
             <p><strong>Skills:</strong> Responsive web design, accessible web design, color and typography</p>
             <p><strong>Tools:</strong> XD</p>
+          </div>
         </div>
     </section>
 
 
-    <section class="project" id="project">
+    <section class="project" id="project-link">
         <div class="content-wrapper">
             <h2>The Project</h2>
 
@@ -87,14 +100,14 @@
                 <p>Deliverables for this project included a color palette, font pairing and typography guide, and responsive web design featuring mobile, tablet, and desktop layouts. Deliverables were created using Adobe XD and were delivered in their original format and as PNGs.</p>
             </div>
 
-            <div class="case-study-section-last">
+            <div class="case-study-section no-bottom">
                 <h3>Project role</h3>
                 <p>I received a project brief from the client and created the deliverables from that information. As the client was fictional, there was no direct communication with the client, but I did frequently seek out and receive feedback from others throughout the process.</p>
             </div>
         </div>
     </section>
 
-    <section class="process" id="process">
+    <section class="process" id="process-link">
         <div class="content-wrapper">
             <h2>The Process</h2>
 
@@ -157,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="case-study-section-last">
+            <div class="case-study-section no-bottom">
                 <h3>Design comps</h3>
                 <div class="column">
                     <p>My next step was to turn the pen-and-paper wireframes into digital designs. I started off by importing the images into Adobe XD, overlaying them over a canvas, and starting to add placeholders of the design elements. After some consideration, I determined that the best method for creating the four identical displays for Yolanda's designs was to create one display and then duplicate it. This ensured that the formatting for each display would be identical, as it would be when formatted by the developer.</p>
@@ -188,36 +201,41 @@
     </section>
 
 
-    <section class="conclusions" id="conclusions">
-        <h2>Project conclusion</h2>
-        <div class="case-study-image">
+    <section class="conclusions" id="conclusions-link">
+        <div class="content-wrapper">
+          <h2>Project conclusion</h2>
+        </div>
+        
+        <div class="case-study-mockup">
             <img src="../img/sc-mockup-final-01-green.png" alt="The full design on three white tablets against a green background" id="final-mockup" />
             <p class=label>The full tablet design</p>
         </div>
 
-        <div class="case-study-section">
+        <div class="content-wrapper">
+          <div class="case-study-section">
             <h3>Challenges</h3>
             <p>The biggest challenge in this project came while adapting the initial wireframes into high-fidelity designs. While creating the image placeholders, I had based their proportions on what looked good and fit with the design, not on the images themselves, which created a conflict when I inserted the images; when sized and masked to fit the placeholders, they didn't show off the images' subjects as well as they could or should. I solved the problem by leaving behind the original image proportions and instead developing new proportions that focused on showing off the most restrictive images' subjects. In the future, the best solution would be to determine the best image proportions before creating the digital wireframe, but that requires having the images early in the design process; if the images are not available at that stage or if they change during the design process, the technique I used would allow for an existing design to be modified to fit the new images with minimal delay.</p>
-        </div>
+          </div>
 
-        <div class="case-study-section">
+          <div class="case-study-section">
             <h3>Conclusion</h3>
             <p>The website design brought the client's brand to life, showing off her chairs to their advantage and enticing site visitors to preorder. The client was very happy with the design, feeling that it met all of her needs, and she passed the design on to her developer to turn it into a functional webpage so she could start sharing her chairs with the world.</p>
-        </div>
+          </div>
 
-        <div class="case-study-section-last">
+          <div class="case-study-section no-bottom">
             <h3>Take a closer look</h3>
             <h4 class="link"><a href="../img/sc-design-mobile.png" download="cjbuys-sit-conmigo-design-mobile">Download mobile design (PNG) >></a></h4>
             <h4 class="link"><a href="../img/sc-design-tablet.png" download="cjbuys-sit-conmigo-design-tablet">Download tablet design (PNG) >></a></h4>
             <h4 class="link"><a href="../img/sc-design-desktop.png" download="cjbuys-sit-conmigo-design-desktop">Download desktop design (PNG) >></a></h4>
+          </div>
         </div>
     </section>
   </main>
 
 
   <footer>
-    <div id="contact" class="content-wrapper">
-      <div class="footer-content">
+    <div id="contact-link" class="footer-content">
+      <div class="content-wrapper">
         <h2>Contact me</h2>
           <h5>If you're interested in working together or just have a question, please don't hesitate to reach out through the form or any of the links below. I'm happy to hear from you!</h5>
         <div class="contact-form">
@@ -229,7 +247,7 @@
           <h5>Location: Orlando, FL</h5>
         </div>
         <div class="business-card">
-          <h4 class=link><a href="../img/cjbuys-business-card.png" download="CJBuys-Business-Card">Download my business card >></a></h4>
+          <h4 class=link><a href="img/cjbuys-business-card.png" download="CJBuys-Business-Card">Download my business card >></a></h4>
         </div>
         <div class="social">
           <div class="account">
@@ -245,10 +263,10 @@
             <p><a href="https://www.instagram.com/cjstrattonbuys/" target="_blank"><i class="fa fa-instagram"></i>Instagram</a></p>
           </div>
         </div>
+        <div class="copyright">
+          <p>Copyright 2022 | CJ Buys</p>
+        </div>
       </div>
-    </div>
-    <div class="copyright">
-      <p>Copyright 2022 | CJ Buys</p>
     </div>
   </footer>
 

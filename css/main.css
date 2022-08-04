@@ -111,18 +111,12 @@ body {
 	align-items: center;
 	flex-flow: row wrap; 
 	text-align: left;
-}
-
-.content-wrapper{
   margin: 0 auto;
   width: 100%;
 }
 
-.header .content-wrapper,
-.introduction .content-wrapper,
-.about .content-wrapper,
-.skills .content-wrapper,
-.work .content-wrapper {
+.content-wrapper, 
+.introduction {
   margin: 5px 3.5%;
 }
 
@@ -185,7 +179,7 @@ h5 {
   font-weight: normal;
 }
 
-h5.hero {
+h5.introduction-emphasis {
   font-weight: bold;
   color: var(--color5);
   text-align: left;
@@ -215,7 +209,9 @@ p.link {
   color: var(--color2);
 }
 
-p.label {
+p.label, 
+header a.button,
+header .dropbtn {
   font-size: 0.875rem;
   line-height: 1rem;
 }
@@ -263,23 +259,23 @@ header {
   margin: 0;
 }
 
-header .content-wrapper {
+.header-content  {
   display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-flow: row wrap; 
 	text-align: left;
+  margin: 0 1%;
 }
 
 header .logo {
-  width: 35%;
-  padding: 5px 10px;
+  width: 30%;
+  margin: 3px 0;
 }
 
 header .buttons {
-  width: 60%;
   display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
 	flex-flow: row wrap; 
 	text-align: left;
@@ -288,11 +284,11 @@ header .buttons {
 header .button {
   background-color: var(--color2);
   border: none;
-  padding: 10px 15px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 5px;
+  margin: 2.5px;
 }
 
 .buttons .button {
@@ -317,10 +313,8 @@ header .button:hover {
 header .dropbtn {
   background-color: var(--color4);
   color: var(--color2);
-  padding: 10px;
-  font-size: 2rem;
   border: none;
-  margin: 5px;
+  margin: 2.5px;
 }
 
 header .dropdown{
@@ -328,17 +322,24 @@ header .dropdown{
   display: inline-block;
 }
 
-header .dropdown-content{
+header .dropdown-content {
   display: none;
   position: absolute;
   background-color: var(--color3);
-  width: 250px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  left:auto;
+  left: auto;
   right:0;
   margin-right:0px;
-  padding: 10px;
+  padding: 0 5px;
+}
+
+#portfolio {
+  width: 210px;
+}
+
+#case-studies {
+  width: 150px;
 }
 
 header .dropdown-content a {
@@ -349,7 +350,7 @@ header .dropdown-content a {
 }
 
 .subpage {
-  padding: 5px 16px;
+  padding: 0px 0px 5px 10px;
 }
 
 header .dropdown-content a:hover {
@@ -367,7 +368,7 @@ header .dropdown:hover .dropbtn {
 
 header .dropdown-content p {
   margin-bottom: 3px;
-  padding: 5px 0px 3px 0px;
+  padding: 0px 3px 3px 0;
 }
 
 
@@ -419,7 +420,6 @@ header .dropdown-content p {
 }
 
 .projects h2 {
-  margin: 0 3.5%;
   padding: 0px;
 }
 
@@ -441,7 +441,7 @@ header .dropdown-content p {
 
 .case-study-text,
 .case-study-intro {
-  margin: 0 3.5%;
+  margin: 0;
   text-align: left;
 }
 
@@ -506,18 +506,19 @@ header .dropdown-content p {
 }
 
 .skill {
-  width: 60%;
+  width: 55%;
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin: 30px 0;
+  margin: 30px 10%;
 }
 
 .skill .fontawesome-icon {
   color: var(--color1);
   font-size: 50px;
   margin: 0 0 5px 0;
+  
 }
 
 .skill h4 {
@@ -526,7 +527,7 @@ header .dropdown-content p {
 
 .skill p {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 
@@ -551,18 +552,12 @@ header .dropdown-content p {
 
 /* ------ footer ------ */
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  flex-direction: column;
   background-color: var(--color4);
-  padding: 0 3.5%;
   width: 100%;
 }
 
 footer .content-wrapper {
-  margin: 100px 0 25px 0;
+  margin: 100px 3.5% 25px 3.5%;
   text-align: left;
 }
 
@@ -586,24 +581,24 @@ footer .content-wrapper {
 
 .social {
   margin: 75px 0;
+  width: 65%;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: flex-start;
   flex-flow: row wrap;
   flex-direction: row;
 }
 
 .account {
-  width: 45%;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-flow: row wrap;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+
 }
 
 .social .fa {
   color: var(--color2);
-  font-size: 30px;
+  font-size: 20px;
   margin: 10px;
 }
 
@@ -614,6 +609,7 @@ footer .content-wrapper {
 footer .copyright p {
   color: var(--color1);
   font-weight: bold;
+  text-align: center;
 }
 
 
@@ -632,12 +628,6 @@ footer .copyright p {
   background-color: var(--color4);
 }
 
-.project h2,
-.process h2,
-.conclusions h2 {
-  margin: 0 3.5% 10px 3.5%;
-}
-
 .project h3,
 .process h3,
 .conclusions h3 {
@@ -645,38 +635,51 @@ footer .copyright p {
 }
 
 .case-study-section {
-  margin: 0 3.5% 75px 3.5%;
+  margin-bottom: 75px;
 }
 
-.case-study-section-last{
-  margin: 0 3.5%;
-}
-
-.process .case-study-image {
+.case-study-image {
   background: white;
   margin: 33px 0 50px 0;
 }
 
-.process .case-study-image.no-bottom {
-  margin-bottom: 0px;
-}
-
-.process .case-study-image img {
+.case-study-image img {
   width: 95%;
   margin: 2.5%;
 }
 
-.process .beside,
-.process .thirds,
-.process .scaled {
+.case-study-image p.label,
+.case-study-mockup p.label {
+  padding: 0 2.5% 2.5% 2.5%;
+  margin-bottom: 0;
+}
+
+.case-study-section p,
+.case-study-section.no-bottom p {
+  margin-bottom: 30px;
+}
+
+.beside,
+.thirds,
+.scaled {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-flow: row wrap;
 }
 
-.process .beside img {
+.beside img {
   width: 44%;
+}
+
+.thirds img {
+  width: 27%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.column .case-study-image {
+  margin-bottom: 50px;
 }
 
 .column-mobile {
@@ -700,63 +703,10 @@ footer .copyright p {
   width: 100%;
 }
 
-.column-mobile .case-study-image.no-bottom,
-.column-mobile p.no-bottom {
-  margin-bottom: 0px;
-}
-
 .column-mobile p.label {
   width: 95%;
   margin-bottom: 2.5%;
 } 
-
-.process .thirds img {
-  width: 27%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-
-.column-one-third,
-.column-two-thirds {
-  margin: 33px 0 50px 0;
-}
-
-.column-two-thirds {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-flow: row wrap;
-  padding-bottom: 0;
-  }
-
-.column-two-thirds .case-study-image {
-  margin-top: 0;
-  margin-bottom: 0px;
-  width: 47%;
-  }
-
-.column .case-study-image,
-.column-two-thirds .case-study-image {
-  margin-bottom: 50px;
-}
-
-.column-two-thirds .case-study-image.no-bottom {
-  margin-bottom: 0px;
-}
-
-.column.two-thirds p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.column-two-thirds p.label {
-    width: 95%;
-    margin-bottom: 2.5%;
-  } 
-
-.column-one-third p {
-  margin: 0;
-}
 
 .designs {
   background: white;
@@ -768,51 +718,33 @@ footer .copyright p {
   padding: 2.5% 2.5% 0 2.5%;
 }
 
-.process .designs .scaled.mobile {
+.designs .scaled.mobile {
   width: 13.57%;
 }
 
-.process .designs .scaled.tablet {
+.designs .scaled.tablet {
   width: 32.56%;
 }
 
-.process .designs .scaled.desktop {
+.designs .scaled.desktop {
   width: 50.87%;
-}
-
-.case-study-section p,
-.case-study-section-last p {
-  margin-bottom: 30px;
 }
 
 .designs p {
   margin: 2.5% 0;
 }
 
-.case-study-image p.label {
-  padding: 0 2.5% 2.5% 2.5%;
-  margin-bottom: 0;
-}
-
-.conclusions .case-study-image {
+.case-study-mockup {
   background: var(--color4);
   margin: 33px 0 50px 0;
 }
 
-.conclusions .case-study-image img {
-  margin: 2.5% 0;
+.case-study-mockup img {
+  margin: 10px 0;
 }
 
-
-
-#csb-mockup-01,
-#csb-mockup-02 {
-  margin-bottom: 5px;
-}
-
-#csb-mockup-02,
-#csb-mockup-03 {
-  margin-top: 5px;
+.no-bottom {
+  margin-bottom: 0px;
 }
 
 
@@ -954,7 +886,9 @@ footer .copyright p {
     font-size: 1.25rem;
   }
 
-  p.label {
+  p.label,
+  header .dropbtn,
+  header a.button {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
@@ -970,12 +904,18 @@ footer .copyright p {
     padding: 125px 0;
   }
 
-  .header .content-wrapper,
-  .introduction .content-wrapper,
-  .about .content-wrapper,
-  .skills .content-wrapper,
-  .work .content-wrapper {
-  margin: 5px 2.6%;
+  .introduction, 
+  .work,
+  .about,
+  .skills,
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .content-wrapper {
+    width: 75%;
+    margin: 5px 2.6%;
   }
 
 
@@ -986,18 +926,33 @@ footer .copyright p {
     width: auto;
   }
 
-  header .dropbtn {
-    font-size: 2.75rem;
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap; 
+    text-align: left;
+    width: 100%;
   }
 
-  header .dropdown-content{
-    width: 330px;
+
+  #portfolio {
+    width: 275px;
+  }
+  
+  #case-studies {
+    width: 200px;
+  }
+
+  /* ------- hero ------- */
+  .bottom-left {
+    bottom: 35px;
   }
   
 
 
   /* ------- intro -------- */
-  .introduction .content-wrapper {
+  .introduction {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -1009,7 +964,7 @@ footer .copyright p {
     width: 48%;
   }
 
-  .introduction h5.hero {
+  .introduction h5.introduction-emphasis {
     margin-top: 0;
   }
   
@@ -1028,10 +983,18 @@ footer .copyright p {
 
   /* ------- about -------- */
   .people {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
+
   .people .image {
-    width: 39%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: right;
+    align-items: flex-start;
+  }
+
+  .people .img {
+    width: 49%;
   }
 
 
@@ -1044,6 +1007,7 @@ footer .copyright p {
   
   .skill {
     width: 39%;
+    margin: 30px 0;
   }
 
   .skill .fontawesome-icon {
@@ -1054,12 +1018,8 @@ footer .copyright p {
 
 
   /* ------- footer -------- */
-  footer {
-    padding: 0 2.6%;
-  }
-  
   footer .content-wrapper {
-    margin: 125px 0 40px 0;
+    margin: 125px 2.6% 40px 2.6%;
     text-align: left;
   }
   
@@ -1086,7 +1046,7 @@ footer .copyright p {
   }
   
   .social .fa { 
-    font-size: 50px;
+    font-size: 30px;
     margin: 15px;
   }
 
@@ -1124,14 +1084,6 @@ footer .copyright p {
     width: 47%;
   }
 
-  .stack {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-flow: column wrap;
-    width: 47%;
-  }
-
   .column .case-study-image {
     margin-bottom: 50px;
   }
@@ -1141,14 +1093,22 @@ footer .copyright p {
     margin-bottom: 0px;
   }
 
-  .stack .case-study-image {
-    width: 100%;
-    margin-top: 0;
-  }
-
   .column p {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .stack {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    width: 47%;
+  }
+
+  .stack .case-study-image {
+    width: 100%;
+    margin-top: 0;
   }
 
   .stack p {
@@ -1161,24 +1121,6 @@ footer .copyright p {
     width: 95%;
     margin-bottom: 2.5%;
   } 
-
-  .column-thirds {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    margin: 0;
-    padding-bottom: 0;
-  }
-
-  .column-one-third {
-    width: 38%;
-  }
-
-  .column-two-thirds {
-    width: 58%;
-    margin-top: 33px;
-  }
 
   #sketch-mobile {
     width: 25.33%;
@@ -1197,72 +1139,25 @@ footer .copyright p {
 
 
 @media all and (min-width:1200px) {
-  /* ------- hero ------- */
+  .header-content,
+  .hero,
+  .introduction,
+  .content-wrapper,
+  footer .content-wrapper {
+    max-width: 1200px;
+  }
+
+  /* ------- hero ------- */ 
+  #hero-link {
+    display: flex;
+    justify-content: center;
+  }
   h1 {
     font-size: 3.25rem;
     line-height: 4rem;
   }
-
-
-
-  /* ------- about -------- */
-  .people .image {
-    width: 30%;
-  }
-
-
-
-  /* ------- skills -------- */
-  .skill {
-    width: 26%;
-  }
-
-  .skill .fontawesome-icon {
-    font-size: 75px;
-    margin: 0 0 10px 0;
-  }
-
-
-
-  /* ------- footer -------- */
-  footer {
-    padding: 0 2.6%;
-  }
-  
-  footer .content-wrapper {
-    margin: 125px 0 40px 0;
-    text-align: left;
-  }
-  
-  .contact-form {
-    margin: 50px 0 75px 0;
-  }
-  
-  .address {
-    font-style: normal;
-    color: var(--color5);
-    margin: 40px 0;
-  }
-  
-  .address h5 {
-    margin: 0;
-  }
-  
-  .business-card {
-    margin: 40px 0;
-  }
-  
-  .social {
-    margin: 100px 0;
-  }
-
-  .account {
-    width: 25%;
-  }
-  
-  .social .fontawesome-icon { 
-    font-size: 50px;
-    margin: 15px;
+  .bottom-left {
+    bottom: 55px;
   }
 }
 

@@ -32,28 +32,40 @@
 
   <!-- Add your site or application content here -->
   <header>
-    <div class="content-wrapper">
+    <div class="header-content">
       <div class="logo">
-        <a href="../index.html">
-            <img src="../img/cjbuys-logo.png" alt="A logo of a flower made of two green leaves and a purple gear as a blossom, with text reading CJ Buys, Visual Designer" id="cj-buys-logo" />
-          </a>
+        <a href="../index.html"><img src="../img/cjbuys-logo.png" alt="A logo of a flower made of two green leaves and a purple gear as a blossom, with text reading CJ Buys, Visual Designer" id="cj-buys-logo" /></a>
       </div>
       <div class=buttons>
-        <a href="#contact" class="button">Contact me</a>
         <nav>
           <div class="dropdown w3-right">
-            <button class="dropbtn"  title="Hover for navigation menu"><i class="fa fa-bars"></i></button>
-            <div class="dropdown-content">
+            <button class="dropbtn">Portfolio</button>
+            <div class="dropdown-content" id="portfolio">
               <a href="../index.html"><p><strong>CJ Buys Portfolio</strong></p></a>
-              <a href="index.html"><p><strong>Case Study: CJ Buys</strong></p></a>
-                <a href="index.html#project" class="subpage">The Project</a>
-                <a href="index.html#process" class="subpage">The Process</a>
-                <a href="index.html#conclusions" class="subpage">Conclusions</a>
-                <a href="#contact" class="subpage">Contact me</a>
-              <a href="../case-study-the-whole-bean/index.html"><p><strong>Case Study: The Whole Bean</strong></p></a>
-              <a href="../case-study-sit-conmigo/index.html"><p><strong>Case Study: Sit Conmigo</strong></p></a>
+                <a href="../index.html/#projects-link" class="subpage">What I do</a>
+                <a href="../index.html/#about-link" class="subpage">What drives me</a>
+                <a href="../index.html/#skills-link" class="subpage">What I bring to the table</a>
+                <a href="../index.html/#work-link" class="subpage">Where to see my work</a>
             </div>
           </div>
+          <div class="dropdown w3-right">
+            <button class="dropbtn">Case Studies</button>
+            <div class="dropdown-content" id="case-studies">
+              <a href="index.html"><p><strong>CJ Buys</strong></p></a>
+                <a href="#project-link" class="subpage">The Project</a>
+                <a href="#process-link" class="subpage">The Process</a>
+                <a href="#conclusions-link" class="subpage">Conclusions</a>
+              <a href="../case-study-the-whole-bean/index.html"><p><strong>The Whole Bean</strong></p></a>
+                <a href="../case-study-the-whole-bean/index.html#project-link" class="subpage">The Project</a>
+                <a href="../case-study-the-whole-bean/index.html#process-link" class="subpage">The Process</a>
+                <a href="../case-study-the-whole-bean/index.html#conclusions-link" class="subpage">Conclusions</a>
+              <a href="../case-study-sit-conmigo/index.html"><p><strong>Sit Conmigo</strong></p></a>
+                <a href="../case-study-sit-conmigo/index.html#project-link" class="subpage">The Project</a>
+                <a href="../case-study-sit-conmigo/index.html#process-link" class="subpage">The Process</a>
+                <a href="../case-study-sit-conmigo/index.html#conclusions-link" class="subpage">Conclusions</a>
+            </div>
+          </div>
+          <a href="#contact-link" class="button">Contact me</a>
         </nav>
       </div>
     </div>
@@ -64,16 +76,18 @@
     <section class="case-study-hero" id="cj-buys">
       <img src="../img/mockup-cj-buys.png" alt="Laptop, mobile phone, and tablet mockups of a website featuring a bright green plant and purple text, all on a green background" id="cj-buys-mockup" />
       <div class="case-study-intro">
-        <h3>CJ Buys</h3>
-        <h6>Web design</h6>
-        <p>This design pairs one of my favorite images – irises in spring – with my intuitive, crisp, and accessible design style to show off who I am as a designer</p>            
-        <p><strong>Skills:</strong> Brand and identity design, color and typography, logo and business card design, responsive web design, accessible web design, web development</p>
-        <p><strong>Tools:</strong> Figma, Photoshop, Illustrator, InDesign</p>
+        <div class="content-wrapper">
+          <h3>CJ Buys</h3>
+          <h6>Web design</h6>
+          <p>This design pairs one of my favorite images – irises in spring – with my intuitive, crisp, and accessible design style to show off who I am as a designer</p>            
+          <p><strong>Skills:</strong> Brand and identity design, color and typography, logo and business card design, responsive web design, accessible web design, web development</p>
+          <p><strong>Tools:</strong> Figma, Photoshop, Illustrator, InDesign</p>
+        </div>
       </div>
     </section>
 
 
-    <section class="project" id="project">
+    <section class="project" id="project-link">
       <div class="content-wrapper">
         <h2>The Project</h2>
 
@@ -87,14 +101,14 @@
           <p>Deliverables for this project included a brand personality, color palette, font pairing, set of logos, business card, and webpage, including designs for a main page and for a case study page. Deliverables were created using Figma, Photoshop, Illustrator, and InDesign, and the final webpage was coded in HTML, CSS, and JavaScript using Visual Studio Code, Git, and GitHub.</p>
         </div>
 
-        <div class="case-study-section-last">
+        <div class="case-study-section no-bottom">
           <h3>Project role</h3>
           <p>As both the client and the designer on this project, I worked to bring my own style and personality to life in a design that both showcased and featured my design work.</p>
         </div>
       </div>
     </section>
 
-    <section class="process" id="process">
+    <section class="process" id="process-link">
       <div class="content-wrapper">
         <h2>The Process</h2>
 
@@ -194,7 +208,7 @@
             </div>
           </div>
         </div>
-        <div class="case-study-section-last">
+        <div class="case-study-section no-bottom">
           <h3>User feedback</h3>
           <p>Having completed a first draft of the design, I reached out to fellow designers, non-designer small business owners, and others for feedback on the design, to ensure that it accurately showcased me, my personality and brand, and my work. One of the areas I'd specifically asked for feedback around was the selection of personal photos I'd included in the About Me section. The result was unsurprising – everyone's favorite photo was of my incredibly adorable and photogenic cat, Milo – and I created a new introduction section at the top of the page featuring their favorite photo of <em>me</em>. This was also the perfect place for a quote that I'd seen in an <a href="https://www.fastcompany.com/90603980/how-bumbles-clever-design-helped-the-app-go-public">article on Bumble's product design</a> that had caught my heart on fire. In it, Bumble's head of product design, Lara Mendonça, talks about designing for "vulnerable users" instead of average users and, while she was talking about designing a dating app for women, that quote cut to the heart of why I center disabled people in my designs. Products designed for disabled users generally still work for non-disabled users, but the reverse often isn't true. To make designs accessible to and welcoming for all, we have to center our most vulnerable users and their needs and experiences.</p>
           <div class="column">
@@ -231,39 +245,44 @@
     </section>
 
 
-    <section class="conclusions" id="conclusions">
-        <h2>Project conclusion</h2>
-        <div class="case-study-image">
+    <section class="conclusions" id="conclusions-link">
+        <div class="content-wrapper">
+          <h2>Project conclusion</h2>
+        </div>
+        
+        <div class="case-study-mockup">
             <img src="../img/csb-mockup-01.png" alt="The full design on three white tablets against a green background - part one" id="csb-mockup-01" />
             <img src="../img/csb-mockup-02.png" alt="The full design on three white tablets against a green background - part two" id="csb-mockup-02" />
             <img src="../img/csb-mockup-03.png" alt="The full design on three white tablets against a green background - part 3" id="csb-mockup-03" />            
             <p class=label>The full tablet design</p>
         </div>
 
-        <div class="case-study-section">
+        <div class="content-wrapper">
+          <div class="case-study-section">
             <h3>Challenges</h3>
             <p>One of the biggest challenges of this design was acting as my own client, without a doubt. I had so many ideas of what story I wanted my design to tell and, the more I explored other designers' work, the more ideas I had of how to bring that story to life. It was so tempting to go back again and again to adjust the formatting and styles, to add new sections, and to just fiddle with it all - and I'm certainly guilty of giving in to that urge! - but I knew that couldn't last. As I've seen in every project I've ever worked on, as a designer and otherwise, there's a huge difference between actually fixing problems or improving your work and chasing perfection. When I found that line with this design, I did a final check on the project, declared it complete, and started developing it.</p>
             <p>This design also forced me to reconsider my design process. In the past, I'd designed much simpler projects and, while I'd gotten plenty of feedback as part of the design process, I'd never designed for an actual client with a real stake in every aspect of the design. My design process reflected that - I created mobile, tablet, and desktop versions of the design before seeking out feedback. While that worked in the past, I knew going in that that process wasn't going to work for this project; there would be too many things I wanted to adjust and try out throughout the process, and constantly updating different versions would be incredibly inefficient. Instead, I focused on designing the mobile version and, once I was satisfied with that version, created the tablet and desktop versions from it. This required me to make small adjustments to the mobile version as I saw how the tablet and desktop versions changed the overall design, but the change paid off: it saved me considerable time and effort over the course of the design and, as a client, it would've saved me quite a bit of money.</p>
-        </div>
+          </div>
 
-        <div class="case-study-section">
+          <div class="case-study-section">
             <h3>Conclusion</h3>
             <p>After I completed this design, I began to develop it using a combination of HTML, CSS, and JavaScript, turning it into the fully functional webpage that you see before you today. This portfolio has become the backbone of my professional brand, allowing me to connect with prospective employers and clients and to show off both my work and my design process. If you're interested in working with me or in any aspect of this design, please don't hesitate to use any of the below contact methods to reach out - I'd love to hear from you.</p>
-        </div>
+          </div>
 
-        <div class="case-study-section-last">
+          <div class="case-study-section no-bottom">
             <h3>Take a closer look</h3>
             <h4 class="link"><a href="../img/cjbuys-design-mobile.png" download="cjbuys-portfolio-design-mobile">Download mobile design (PNG) >></a></h4>
             <h4 class="link"><a href="../img/cjbuys-design-tablet.png" download="cjbuys-portfolio-design-tablet">Download tablet design (PNG) >></a></h4>
             <h4 class="link"><a href="../img/cjbuys-design-desktop.png" download="cjbuys-portfolio-design-desktop">Download desktop design (PNG) >></a></h4>
+          </div>
         </div>
     </section>
   </main>
 
 
   <footer>
-    <div id="contact" class="content-wrapper">
-      <div class="footer-content">
+    <div id="contact-link" class="footer-content">
+      <div class="content-wrapper">
         <h2>Contact me</h2>
           <h5>If you're interested in working together or just have a question, please don't hesitate to reach out through the form or any of the links below. I'm happy to hear from you!</h5>
         <div class="contact-form">
@@ -275,7 +294,7 @@
           <h5>Location: Orlando, FL</h5>
         </div>
         <div class="business-card">
-          <h4 class=link><a href="../img/cjbuys-business-card.png" download="CJBuys-Business-Card">Download my business card >></a></h4>
+          <h4 class=link><a href="img/cjbuys-business-card.png" download="CJBuys-Business-Card">Download my business card >></a></h4>
         </div>
         <div class="social">
           <div class="account">
@@ -291,10 +310,10 @@
             <p><a href="https://www.instagram.com/cjstrattonbuys/" target="_blank"><i class="fa fa-instagram"></i>Instagram</a></p>
           </div>
         </div>
+        <div class="copyright">
+          <p>Copyright 2022 | CJ Buys</p>
+        </div>
       </div>
-    </div>
-    <div class="copyright">
-      <p>Copyright 2022 | CJ Buys</p>
     </div>
   </footer>
 
