@@ -115,6 +115,16 @@ body {
   width: 100%;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + main {
+  padding-top: 55px;
+}
+
 .content-wrapper, 
 .introduction {
   margin: 5px 3.5%;
@@ -257,6 +267,7 @@ header {
   border-bottom: 3px solid var(--color1);
   width: 100%;
   margin: 0;
+  z-index: 3;
 }
 
 .header-content  {
@@ -327,7 +338,7 @@ header .dropdown-content {
   position: absolute;
   background-color: var(--color3);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 3;
   left: auto;
   right:0;
   margin-right:0px;
@@ -378,6 +389,7 @@ header .dropdown-content p {
   position: relative;
   text-align: center;
   color: white;
+  z-index: 0;
 }
 
 .bottom-left {
@@ -386,6 +398,7 @@ header .dropdown-content p {
   left: 16px;
   width: 50%;
   text-align: left;
+  z-index: 1;
 }
 
 
