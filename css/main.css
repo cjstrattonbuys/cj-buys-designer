@@ -492,46 +492,6 @@ header .dropdown-content p {
 
 
 
-
-/* ------ about ----- */
-.about {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color4);
-}
-
-.people, .cats {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 33px 0 50px 0;
-}
-
-.people .image {
-  width: 45%;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: right;
-  align-items: flex-start;
-}
-
-.cats .image {
-  width: 30%;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: right;
-  align-items: flex-start;
-}
-
-.label {
-  margin: 1px;
-}
-
-
-
 /* ------ skills ----- */
 .skills {
   display: flex;
@@ -596,6 +556,7 @@ header .dropdown-content p {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  background-color: var(--color4);
 }
 
 .work-text h4.title {
@@ -604,6 +565,44 @@ header .dropdown-content p {
 
 .resume {
   margin: 25px 0 0 0;
+}
+
+
+
+/* ------ about ----- */
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.people, .cats {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 33px 0 50px 0;
+}
+
+.people .image {
+  width: 45%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: right;
+  align-items: flex-start;
+}
+
+.cats .image {
+  width: 30%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: right;
+  align-items: flex-start;
+}
+
+.label {
+  margin: 1px;
 }
 
 
@@ -1066,24 +1065,6 @@ footer .copyright p {
 
 
 
-  /* ------- about -------- */
-  .people {
-    justify-content: space-around;
-  }
-
-  .people .image {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: right;
-    align-items: flex-start;
-  }
-
-  .people .img {
-    width: 49%;
-  }
-
-
-
   /* ------- skills -------- */
   .skills-list {
     justify-content: space-between;
@@ -1115,6 +1096,24 @@ footer .copyright p {
   .list-tools {
     width: 47%;
     margin-bottom: 0;
+  }
+
+
+
+  /* ------- about -------- */
+  .people {
+    justify-content: space-around;
+  }
+
+  .people .image {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: right;
+    align-items: flex-start;
+  }
+
+  .people .img {
+    width: 49%;
   }
 
 
