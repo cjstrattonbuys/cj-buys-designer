@@ -131,7 +131,6 @@ body {
 }
 
 .introduction, 
-.projects, 
 .about,
 .skills,
 .work,
@@ -139,6 +138,10 @@ body {
 .process,
 .conclusions {
   padding: 100px 0;
+}
+
+.case-study-title {
+  padding-top: 100px;
 }
 
 a {
@@ -404,6 +407,11 @@ header .dropdown-content p {
 
 
 /* ------ intro ----- */
+#introduction-link {
+  display: flex;
+  justify-content: center;
+}
+
 .introduction {
   display: flex;
   flex-flow: row wrap;
@@ -428,25 +436,45 @@ header .dropdown-content p {
 
 
 /* ------ projects ----- */
-.projects {
+#projects-link {
+  display: flex;
+  justify-content: center;
+}
+
+.case-study-title,
+.case-study-blurb {
   background-color: var(--color4);
 }
 
-.projects h2 {
+.case-study-title {
+  width: 100%;
+}
+
+.case-study-title .projects-centered {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.projects-centered {
+  display: flex;
+  justify-content: center;
+}
+
+.case-study-blurb {
+  padding-bottom: 75px;
+}
+
+.case-study-title h2 {
   padding: 0px;
 }
 
-.case-studies {
-  margin-top: 15px;
-}
-
-.case-study,
 .case-study-intro {
   margin: 0 0 75px 0;
 }
 
-.case-study h3,
-.case-study h6,
+.case-study-blurb h3,
+.case-study-blurb h6,
 .case-study-intro h3,
 .case-study-intro h6 {
   margin: 0px;
@@ -464,12 +492,14 @@ header .dropdown-content p {
 
 
 
+
 /* ------ about ----- */
 .about {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  background-color: var(--color4);
 }
 
 .people, .cats {
@@ -508,7 +538,6 @@ header .dropdown-content p {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  background-color: var(--color4);
 }
 
 .skills-list {
@@ -543,6 +572,22 @@ header .dropdown-content p {
   text-align: left;
 }
 
+.lists {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 75px;
+}
+
+.lists h3,
+.lists p {
+  margin: 0 0 5px 0;
+}
+
+.list-skills {
+  margin-bottom: 30px;
+}
+
 
 
 /* ------ work ----- */
@@ -567,6 +612,13 @@ header .dropdown-content p {
 footer {
   background-color: var(--color4);
   width: 100%;
+  display: flex;
+	justify-content: center;
+}
+
+footer .footer-content {
+  display: flex;
+	justify-content: center;
 }
 
 footer .content-wrapper {
@@ -606,7 +658,6 @@ footer .content-wrapper {
   width: 50%;
   margin: 0;
   padding: 0;
-
 }
 
 .social .fa {
@@ -634,6 +685,13 @@ footer .copyright p {
 
 .case-study-hero img {
   margin-bottom: 10px;
+}
+
+.case-study-intro,
+.project,
+.process {
+  display: flex;
+  justify-content: center;
 }
 
 .case-study-hero,
@@ -907,7 +965,6 @@ footer .copyright p {
   }
 
   .introduction, 
-  .projects, 
   .about,
   .skills,
   .work,
@@ -917,13 +974,17 @@ footer .copyright p {
     padding: 125px 0;
   }
 
+  .projects {
+    padding-top: 125px;
+  }
+
   .introduction, 
   .work,
   .about,
   .skills,
   .footer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .content-wrapper {
@@ -948,7 +1009,6 @@ footer .copyright p {
     width: 100%;
   }
 
-
   #portfolio {
     width: 275px;
   }
@@ -956,6 +1016,8 @@ footer .copyright p {
   #case-studies {
     width: 200px;
   }
+
+
 
   /* ------- hero ------- */
   .bottom-left {
@@ -988,6 +1050,16 @@ footer .copyright p {
 
 
   /* ------- projects -------- */
+  .case-study-title .projects-centered {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .case-study-title .projects-centered .content-wrapper {
+    margin-left: 0px;
+  }
+
   .case-study .image {
     margin-bottom: 10px;
   }
@@ -1026,6 +1098,23 @@ footer .copyright p {
   .skill .fontawesome-icon {
     font-size: 75px;
     margin: 0 0 10px 0;
+  }
+
+  .lists {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .lists p {
+    margin: 0 0 10px 0;
+  }
+
+  .list-skills,
+  .list-tools {
+    width: 47%;
+    margin-bottom: 0;
   }
 
 
@@ -1155,11 +1244,16 @@ footer .copyright p {
   .header-content,
   .hero,
   .introduction,
-  .content-wrapper,
+  .projects,
+  .about .content-wrapper,
+  .skills .content-wrapper,
+  .work .content-wrapper,
   footer .content-wrapper {
     max-width: 1200px;
   }
 
+  
+  
   /* ------- hero ------- */ 
   #hero-link {
     display: flex;
