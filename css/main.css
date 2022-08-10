@@ -645,15 +645,17 @@ footer .content-wrapper {
 
 .social {
   margin: 75px 0;
-  width: 65%;
+  width: 100%;
   display: flex;
   justify-content: left;
-  align-items: flex-start;
+  align-items: space-around;
   flex-flow: row wrap;
   flex-direction: row;
 }
 
 .account {
+  display: flex;
+  justify-content: space-around;
   width: 50%;
   margin: 0;
   padding: 0;
