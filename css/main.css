@@ -1246,11 +1246,16 @@ footer .copyright p {
   .case-study-text,
   .skills .content-wrapper,
   .work .content-wrapper,
-  .about .content-wrapper {
+  .about .content-wrapper,
+  .case-study-intro .content-wrapper,
+  .project .content-wrapper,
+  .process .content-wrapper,
+  .conclusions .content-wrapper {
     max-width: 900px;
   }
 
-  .work {
+  .work,
+  .case-study-intro {
     width: 100vw;
   }
 
