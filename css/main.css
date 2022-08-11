@@ -445,6 +445,7 @@ header .dropdown:hover .dropbtn {
 .case-study-title,
 .case-study-blurb {
   background-color: var(--color4);
+  width: 100%; 
 }
 
 .case-study-title {
@@ -1241,16 +1242,28 @@ footer .copyright p {
   .header-content,
   .hero,
   .introduction,
-  .projects,
-  .about .content-wrapper,
+  .case-study-title .projects-centered,
+  .case-study-text,
   .skills .content-wrapper,
   .work .content-wrapper,
+  .about .content-wrapper {
+    max-width: 900px;
+  }
+
+  .work {
+    width: 100vw;
+  }
+
   footer .content-wrapper {
     max-width: 1200px;
   }
 
-  
-  
+  .case-study-blurb .projects-centered .content-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+
   /* ------- hero ------- */ 
   #hero-link {
     display: flex;
@@ -1261,7 +1274,7 @@ footer .copyright p {
     line-height: 4rem;
   }
   .bottom-left {
-    bottom: 55px;
+    bottom: 5px;
   }
 }
 
