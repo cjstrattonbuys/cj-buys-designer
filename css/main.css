@@ -331,6 +331,10 @@ header .dropbtn {
   margin: 2.5px;
 }
 
+header .dropbtn a {
+  text-decoration: none;
+}
+
 header .dropdown{
   position: relative;
   display: inline-block;
@@ -364,7 +368,7 @@ header .dropdown-content a {
 }
 
 .subpage {
-  padding: 0px 0px 5px 10px;
+  padding: 7px 3px 3px 3px;
 }
 
 header .dropdown-content a:hover {
