@@ -1240,7 +1240,6 @@ footer .copyright p {
 
 @media all and (min-width:1200px) {
   .header-content,
-  .hero,
   .introduction,
   .case-study-title .projects-centered,
   .case-study-text,
@@ -1259,6 +1258,7 @@ footer .copyright p {
     width: 100vw;
   }
 
+  .hero,
   footer .content-wrapper {
     max-width: 1200px;
   }
@@ -1279,7 +1279,7 @@ footer .copyright p {
     line-height: 4rem;
   }
   .bottom-left {
-    bottom: 5px;
+    bottom: 55px;
   }
 }
 
