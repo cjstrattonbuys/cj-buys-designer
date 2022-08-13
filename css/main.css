@@ -574,7 +574,6 @@ header .home-button:hover {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  background-color: var(--color4);
 }
 
 .work-text h4.title {
@@ -593,6 +592,7 @@ header .home-button:hover {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  background-color: var(--color4);
 }
 
 .people, .cats {
