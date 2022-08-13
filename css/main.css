@@ -225,7 +225,7 @@ p.link {
 p.label, 
 header a.button,
 header .dropbtn,
-header a.about-button {
+header a.home-button {
   font-size: 0.875rem;
   line-height: 1rem;
 }
@@ -326,7 +326,7 @@ header .button:hover {
 }
 
 header .dropbtn,
-header .about-button {
+header .home-button {
   background-color: var(--color4);
   color: var(--color5);
   border: none;
@@ -337,7 +337,7 @@ header .dropbtn a {
   text-decoration: none;
 }
 
-a.about-button {
+a.home-button {
   text-decoration: none;
   font-weight: 400;
   color: var(--color5);
@@ -361,12 +361,12 @@ header .dropdown-content {
   padding: 0 5px;
 }
 
-#home {
-  width: 145px;
+#portfolio {
+  width: 270px;
 }
 
-#portfolio {
-  width: 155px;
+#about {
+  width: 100px;
 }
 
 header .dropdown-content {
@@ -381,6 +381,10 @@ header .dropdown-content a {
   padding: 5px 10px;
 }
 
+.new-page {
+  margin-left: 15px;
+}
+
 header .dropdown-content a:hover {
   background-color: var(--color4);
 }
@@ -393,7 +397,7 @@ header .dropdown:hover .dropbtn {
   background-color: var(--color3);
 }
 
-header .about-button:hover {
+header .home-button:hover {
   background-color: var(--color3);
 }
 
@@ -970,7 +974,7 @@ footer .copyright p {
   header .dropbtn,
   header a.button,
   .dropdown-content a,
-  header a.about-button {
+  header a.home-button {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
@@ -1019,13 +1023,13 @@ footer .copyright p {
     text-align: left;
     width: 100%;
   }
-
-  #home {
-    width: 160px;
-  }
   
   #portfolio {
-    width: 170px;
+    width: 300px;
+  }
+
+  #about {
+    width: 110px;
   }
 
 
