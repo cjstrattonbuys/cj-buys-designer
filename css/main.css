@@ -643,6 +643,29 @@ footer .content-wrapper {
   text-align: left;
 }
 
+footer .links {
+  align-content: center;
+  margin-bottom: 40px;
+}
+
+footer .pages {
+  width: 30%;
+}
+
+footer .cases {
+  width: 30%;
+}
+
+footer .acknowledgements {
+  width: 75%;
+}
+
+footer .pages h4,
+footer .cases h4,
+footer .acknowledgements h4 {
+  margin-bottom: 15px;
+}
+
 .contact-form {
   margin: 50px 0 75px 0;
 }
@@ -1138,6 +1161,13 @@ footer .copyright p {
   footer .content-wrapper {
     margin: 125px 2.6% 40px 2.6%;
     text-align: left;
+  }
+
+  footer .links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 40px;
   }
   
   .contact-form {
