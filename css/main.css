@@ -134,6 +134,7 @@ body {
 .about,
 .skills,
 .work,
+.contact,
 .project,
 .process,
 .conclusions {
@@ -625,6 +626,68 @@ header .home-button:hover {
 
 
 
+/* ------ contact ------ */
+.contact {
+  width: 100%;
+  display: flex;
+	justify-content: center;
+}
+
+.contact .content-wrapper {
+  margin: 0px 3.5% 25px 3.5%;
+  text-align: left;
+}
+
+.contact-form {
+  margin: 50px 0 75px 0;
+}
+
+.address {
+  font-style: normal;
+  color: var(--color5);
+  margin: 25px 0;
+}
+
+.address h5 {
+  margin: 0;
+}
+
+.business-card {
+  margin: 25px 0;
+}
+
+.social {
+  margin: 25px 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.account {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  padding-right: 15px;
+}
+
+.social .fa {
+  color: var(--color2);
+  font-size: 20px;
+  margin: 5px 5px 5px 0;
+}
+
+.social p {
+  color: var(--color2);
+  margin: 0px;
+}
+
+
+
+
 /* ------ footer ------ */
 footer {
   background-color: var(--color4);
@@ -664,51 +727,6 @@ footer .pages h4,
 footer .cases h4,
 footer .acknowledgements h4 {
   margin-bottom: 15px;
-}
-
-.contact-form {
-  margin: 50px 0 75px 0;
-}
-
-.address {
-  font-style: normal;
-  color: var(--color5);
-  margin: 25px 0;
-}
-
-.address h5 {
-  margin: 0;
-}
-
-.business-card {
-  margin: 25px 0;
-}
-
-.social {
-  margin: 75px 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.account {
-  display: flex;
-  justify-content: space-around;
-  width: 45%;
-  margin: 0;
-  padding: 0;
-}
-
-.social .fa {
-  color: var(--color2);
-  font-size: 20px;
-  margin: 10px 10px 10px 0;
-}
-
-.social p {
-  color: var(--color2);
 }
 
 footer .copyright p {
@@ -1006,6 +1024,7 @@ footer .copyright p {
   .about,
   .skills,
   .work,
+  .contact,
   .project,
   .process,
   .conclusions {
@@ -1157,19 +1176,12 @@ footer .copyright p {
 
 
 
-  /* ------- footer -------- */
-  footer .content-wrapper {
-    margin: 125px 2.6% 40px 2.6%;
+  /* ------- contact -------- */
+  .contact .content-wrapper {
+    margin: 0px 2.6% 40px 2.6%;
     text-align: left;
   }
 
-  footer .links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin-bottom: 40px;
-  }
-  
   .contact-form {
     margin: 50px 0 75px 0;
   }
@@ -1194,7 +1206,11 @@ footer .copyright p {
   
   .social .fa { 
     font-size: 30px;
-    margin: 15px;
+    margin: 10px;
+  }
+
+  .account {
+    padding-right: 20px;
   }
 
 
@@ -1279,6 +1295,20 @@ footer .copyright p {
   
   #sketch-desktop {
     width: 95%;
+  }
+
+
+  /* ------- footer -------- */
+  footer .content-wrapper {
+    margin: 125px 2.6% 40px 2.6%;
+    text-align: left;
+  }
+
+  footer .links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 40px;
   }
 }
 
