@@ -475,11 +475,6 @@ header .home-button:hover {
   justify-content: flex-start;
 }
 
-.projects-centered {
-  display: flex;
-  justify-content: center;
-}
-
 .case-study-blurb {
   padding-bottom: 75px;
 }
@@ -1110,7 +1105,7 @@ footer .copyright p {
   .case-study-title .projects-centered {
     width: 75%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .case-study-title .projects-centered .content-wrapper {
@@ -1119,6 +1114,11 @@ footer .copyright p {
 
   .case-study .image {
     margin-bottom: 10px;
+  }
+
+  .projects-centered {
+    display: flex;
+    justify-content: center;
   }
 
 
