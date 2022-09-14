@@ -181,6 +181,14 @@ h3 {
   color: var(--color5);
 }
 
+h3.footer-text {
+  font-family: "Temeraire", "serif";
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--color1);
+}
+
 h4 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -191,6 +199,10 @@ h4 {
 h4.link {
   color: var(--color2);
   margin: 0 0 5px 0;
+}
+
+h4.footer-text {
+  font-size: 1.025rem;
 }
 
 h5 {
@@ -231,9 +243,11 @@ p.link {
 }
 
 p.label, 
+p.footer-text,
 header a.button,
 header .dropbtn,
-header a.home-button {
+header a.home-button,
+a.footer-text {
   font-size: 0.875rem;
   line-height: 1rem;
 }
@@ -720,6 +734,12 @@ footer .content-wrapper {
   text-align: left;
 }
 
+footer .footer-name {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
 footer .links {
   align-content: center;
   margin-bottom: 50px;
@@ -733,8 +753,7 @@ footer .acknowledgements {
   width: 75%;
 }
 
-footer .pages h4,
-footer .acknowledgements h4 {
+footer h4 {
   margin-bottom: 15px;
 }
 
@@ -1039,6 +1058,10 @@ footer .copyright p {
     line-height: 3rem;
   }
 
+  h3.footer-text {
+    font-size: 1.5rem;
+  }
+
   h4,
   h4.link {
     font-size: 1.5rem;
@@ -1047,6 +1070,10 @@ footer .copyright p {
 
   h4.link {
     margin: 0 0 10px 0;
+  }
+
+  h4.footer-text {
+    font-size: 1.25rem;
   }
 
   h5,
@@ -1065,10 +1092,12 @@ footer .copyright p {
   }
 
   p.label,
+  p.footer-text,
   header .dropbtn,
   header a.button,
   .dropdown-content a,
-  header a.home-button {
+  header a.home-button,
+  a.footer-text {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
