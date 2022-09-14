@@ -873,19 +873,56 @@ footer .copyright p {
   margin: 2.5% 0;
 }
 
-.case-study-mockup {
-  background: var(--color4);
-  margin: 33px 0 50px 0;
-}
-
-.case-study-mockup img {
-  margin: 10px 0;
-}
-
 .no-bottom {
   margin-bottom: 0px;
 }
 
+.case-study-mockup {
+  background-color: var(--color2);
+  margin: 33px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.carousel-main {
+  width: 45%;
+  padding: 10px;
+}
+
+.carousel-slides {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+}
+
+.slide {
+  text-align: center;
+  margin: 15px;
+}
+
+.slide p {
+  size: 0.25rem;
+  color: var(--color3);
+  padding: 0;
+  margin: 0;
+}
+
+.imgStyle {
+  width: 75px;
+  border: 3px var(--color2) solid;
+}
+
+.mockup-footer {
+  background-color: var(--color4);
+  margin-top: 0;
+  margin-bottom: 33px;
+}
 
 
 
