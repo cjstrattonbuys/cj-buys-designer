@@ -895,9 +895,16 @@ footer .copyright p {
   padding: 10px;
 }
 
-.carousel-slides {
+#mainImage {
+  max-width: 500px;
+}
+
+.carousel-row {
   display: flex;
   flex-flow: row wrap;
+}
+
+.carousel-slides {
   padding: 10px;
 }
 
@@ -907,7 +914,6 @@ footer .copyright p {
 }
 
 .slide p {
-  size: 0.25rem;
   color: var(--color3);
   padding: 0;
   margin: 0;
