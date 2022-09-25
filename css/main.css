@@ -280,6 +280,7 @@ a:active {
 
 img {
   width: 100%;
+  cursor: grab;
 }
  
 
@@ -1456,6 +1457,7 @@ footer .copyright p {
   }
 
   .work,
+  .case-study-title,
   .case-study-intro {
     width: 100vw;
   }
