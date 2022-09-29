@@ -103,7 +103,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", "Optima-Regular", sans-serif;
+  font-family: "Figtree", "Optima-Regular", sans-serif;
   font-size: 1rem;
   color: var(--color5);
   display: flex;
@@ -280,7 +280,6 @@ a:active {
 
 img {
   width: 100%;
-  cursor: grab;
 }
  
 

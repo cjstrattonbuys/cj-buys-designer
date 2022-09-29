@@ -17,7 +17,7 @@ function myFunction() {
 }
 
 
-var images = document.getElementsByTagName("img");
+var images = document.getElementsByClassName("imgStyle");
 
 for (var i = 0; i < images.length; i++) {
   images[i].onmouseover = function() {
